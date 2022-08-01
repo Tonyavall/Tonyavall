@@ -1,5 +1,4 @@
 import React from 'react'
-import PageContent from '../PageContent'
 import Home from '../Home'
 import Works from '../Works'
 import Collaborations from '../Collaborations'

@@ -1,4 +1,4 @@
-function Navbar(props) {
+export default function Navbar(props) {
   const {
     pages,
     setCurrentPage,
@@ -9,7 +9,7 @@ function Navbar(props) {
       {
         pages.map(page=> (
           <button 
-            onClick={setCurrentPage(page)} 
+            onClick={() => setCurrentPage(page)} 
             className="mx-2"
             key={page}
             >
@@ -20,5 +20,3 @@ function Navbar(props) {
     </nav>
   )
 }
-
-export default Navbar
