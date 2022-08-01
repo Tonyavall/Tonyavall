@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Navbar from './components/Navbar'
+import Page from './components/Page'
 
 function App() {
   const [pages] = useState([
@@ -12,12 +13,16 @@ function App() {
   const [currentPage, setCurrentPage] = useState(pages[0])
 
   return (
-    <div>
-        <Navbar 
-          setCurrentPage={setCurrentPage} 
-          pages={pages}> 
-        </Navbar>
-    </div>
+    <>
+      <Navbar 
+        setCurrentPage={setCurrentPage} 
+        pages={pages}> 
+      </Navbar>
+        
+      <main>
+        <Page currentPage={currentPage}></Page>
+      </main>
+    </>
   )
 }
 
