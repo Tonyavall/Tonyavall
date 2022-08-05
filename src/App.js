@@ -6,7 +6,6 @@ function App() {
   const [pages] = useState([
     'Home',
     'Works',
-    'Collaborations',
     'About',
   ])
 
@@ -19,7 +18,7 @@ function App() {
         pages={pages}> 
       </Navbar>
         
-      <main className='flex justify-center bg-zinc-800 h-screen text-white p-3 font-mono'>
+      <main className='flex justify-center bg-zinc-800 min-h-screen h-fill text-white p-3 font-mono'>
         <Page currentPage={currentPage}></Page>
       </main>
     </>
