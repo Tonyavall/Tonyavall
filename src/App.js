@@ -19,7 +19,7 @@ function App() {
         pages={pages}> 
       </Navbar>
         
-      <main>
+      <main className='flex justify-center bg-zinc-800 h-screen text-white p-3 font-mono'>
         <Page currentPage={currentPage}></Page>
       </main>
     </>
