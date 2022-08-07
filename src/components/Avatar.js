@@ -1,8 +1,9 @@
 import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/Model.glb')
+export function Avatar(props) {
+  const { nodes, materials } = useGLTF('/Avatar.glb')
+  
   return (
     <group {...props} dispose={null}>
       <primitive object={nodes.Hips} />
@@ -20,4 +21,4 @@ export function Model(props) {
   )
 }
 
-useGLTF.preload('/tonyavatar.glb')
+useGLTF.preload('/Avatar.glb')
