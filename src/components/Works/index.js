@@ -1,38 +1,33 @@
 export default function Works() {
   const works = [
     {
-      title: 'Work 1',
+      title: 'eCommerce Backend',
       description: 'Description',
-      image: 'image file path here'
+      image: './assets/images/eCommBackend.png'
     },
     {
-      title: 'Work 2',
+      title: 'Express Note taker',
       description: 'Description',
-      image: 'image file path here'
+      image: './assets/images/expressNoteTaker.png'
     },
     {
-      title: 'Work 3',
+      title: 'ReadMe Generator',
       description: 'Description',
-      image: 'image file path here'
+      image: './assets/images/readMeGen.gif'
     },
   ]
 
   const collaborations = [
     {
-      title: 'Work 1',
-      description: 'Description',
-      image: 'image file path here'
+      title: "What's Streamin'?",
+      description: 'Random Show Generator based on user options.',
+      image: './assets/images/streamin.jpg'
     },
     {
-      title: 'Work 1',
-      description: 'Description',
-      image: 'image file path here'
-    },
-    {
-      title: 'Work 1',
-      description: 'Description',
-      image: 'image file path here'
-    },
+      title: 'OldEgg',
+      description: 'An electronics ecommerce website.',
+      image: './assets/images/oldEgg.png'
+    }
   ]
 
   return (
@@ -42,8 +37,8 @@ export default function Works() {
       <div className="flex flex-row flex-wrap p-2"> 
       {
         works.map(work=> 
-            <div className="flex flex-col mx-2">
-                <div className="w-52 h-36 bg-white rounded-xl"></div>
+            <div className="flex flex-col mx-2" key={work.title}>
+                <div className={'w-52 h-36 rounded-xl bg-[url("' + work.image + '")] bg-no-repeat bg-cover bg-center'}></div>
                 <p className="m-1">{work.title}</p>
                 <p className="m-1">{work.description}</p>
             </div>
@@ -54,11 +49,13 @@ export default function Works() {
       <h4 className='text-2xl text-vs-green underline underline-offset-8 mb-2'>Collaborations</h4>
       <div className="flex flex-row flex-wrap p-2"> 
       {
-        collaborations.map(work=> 
-            <div className="flex flex-col mx-2">
-                <div className="w-52 h-36 bg-white rounded-xl"></div>
-                <p className="m-1">{work.title}</p>
-                <p className="m-1">{work.description}</p>
+        collaborations.map(collab=> 
+            <div className="flex flex-col mx-2" key={collab.title}>
+                <div 
+                  className={'w-52 h-36 rounded-xl bg-[url("' + collab.image + '")] bg-no-repeat bg-cover bg-center'}>
+                </div>
+                <p className="m-1 w-52">{collab.title}</p>
+                <p className="m-1 w-52">{collab.description}</p>
             </div>
         )
       }

@@ -695,6 +695,10 @@ video {
   background-image: url("./assets/images/selfie.jpg");
 }
 
+.bg-\[url\(\"\.\/assets\/images\/oldEgg\.png\"\)\] {
+  background-image: url("./assets/images/oldEgg.png");
+}
+
 .bg-cover {
   background-size: cover;
 }
