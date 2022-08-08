@@ -16,18 +16,18 @@ export function Project({currentProject, setCurrentPage}) {
             <p className="mx-4 my-3">{currentProject.description}</p>
 
             <div className="flex flex-row">
-                <p className="ml-4 my-3 text-vs-bg bg-vs-teal font-semibold rounded w-[80px] text-center">Platform</p>
+                <p className="ml-4 my-3 text-vs-bg bg-vs-teal font-semibold rounded w-[80px] h-[24px] text-center">Platform</p>
                 <p  className="ml-4 my-3">{currentProject.platform}</p>
             </div>
 
             <div className="flex flex-row">
-                <p className="ml-4 my-3 text-vs-bg bg-vs-teal font-semibold rounded w-[80px] text-center">Stack</p>
+                <p className="ml-4 my-3 text-vs-bg bg-vs-teal font-semibold rounded w-[80px] h-[24px] text-center">Stack</p>
                 <p  className="ml-4 my-3">{currentProject.stack}</p>
             </div>
 
             {currentProject.website ? 
                 <div className="flex flex-row">
-                    <p className="ml-4 my-3 text-vs-bg bg-vs-teal font-semibold px-2 rounded w-[80px] text-center">Website</p>
+                    <p className="ml-4 my-3 text-vs-bg bg-vs-teal font-semibold px-2 rounded w-[80px] h-[24px] text-center">Website</p>
                     <a
                         target="_blank" 
                         rel="noopener noreferrer"
@@ -37,7 +37,7 @@ export function Project({currentProject, setCurrentPage}) {
                 </div> : null
             }
             <div className="flex flex-row">
-                <p className="ml-4 my-3 text-vs-bg bg-vs-teal font-semibold px-2 rounded w-[80px] text-center">Github</p>
+                <p className="ml-4 my-3 text-vs-bg bg-vs-teal font-semibold px-2 rounded w-[80px] h-[24px] text-center">Github</p>
                 <a
                     target="_blank" 
                     rel="noopener noreferrer"
