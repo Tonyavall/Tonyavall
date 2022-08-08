@@ -12,21 +12,21 @@ export default function Home() {
           <h2 className='text-4xl text-vs-pink'>Tony Vallescas</h2>
           <p>Student, Aspiring Software Engineer</p>
         </div>
-        <div className='bg-[url("./assets/images/selfie.jpg")] w-32 h-32 bg-no-repeat bg-cover bg-center rounded-full'></div>
+        <div className='bg-[url("../public/assets/images/selfie.jpg")] w-32 h-32 bg-no-repeat bg-cover bg-center rounded-full'></div>
       </div>
 
       <div className='flex flex-col flex-wrap px-5 max-w-lg'>
-        <h3 className='text-2xl text-vs-green underline underline-offset-8 mb-2'>Work</h3>
+        <h3 className='text-2xl text-vs-purple underline underline-offset-8 mb-2'>Work</h3>
         <p className='py-4'>
             I'm a full stack web developer with expertise on the MERN stack. I'm well versed in both frontend,
             and backend frameworks and their respective libraries such as React, Nodejs, Express, NoSql, MySql,
             Graphql, etc. My works and full breadth of knowledge can be found in my portfolio.
         </p>
-        <button className='text-lg text-[#282A36] h-9 w-1/4 self-end rounded-md bg-vs-teal hover:bg-white font-extrabold'>Porfolio</button>
+        <button className='text-lg text-vs-bg h-9 w-1/4 self-end rounded-md bg-vs-teal hover:bg-white font-extrabold'>Porfolio</button>
       </div>
 
       <div className='flex flex-col flex-wrap px-5 max-w-lg w-full'>
-        <h4 className='text-2xl text-vs-green underline underline-offset-8 mb-2'>Bio</h4>
+        <h4 className='text-2xl text-vs-purple underline underline-offset-8 mb-2'>Bio</h4>
 
         <div className='flex flex-row py-2'>
           <p className='px-4 font-bold'>2000</p>

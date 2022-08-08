@@ -21,7 +21,7 @@ function App() {
         pages={pages}> 
       </Navbar>
         
-      <main className='flex flex-col items-center bg-[#282A36] min-h-screen h-fill text-white p-3 font-mono'>
+      <main className='flex flex-col items-center bg-vs-bg min-h-screen h-fill text-white p-3 font-mono'>
         <Canvas
           camera={{ position: [2, 0, 12.25], fov: 15, autoRotate: true }}
           style={{
