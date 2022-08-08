@@ -686,17 +686,8 @@ video {
   background-color: rgb(151 225 241 / var(--tw-bg-opacity));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-\[url\(\"\.\/assets\/images\/selfie\.jpg\"\)\] {
   background-image: url("./assets/images/selfie.jpg");
-}
-
-.bg-\[url\(\"\.\/assets\/images\/oldEgg\.png\"\)\] {
-  background-image: url("./assets/images/oldEgg.png");
 }
 
 .bg-cover {

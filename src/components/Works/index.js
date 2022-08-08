@@ -3,17 +3,17 @@ export default function Works() {
     {
       title: 'eCommerce Backend',
       description: 'Description',
-      image: './assets/images/eCommBackend.png'
+      image: '/assets/images/eCommBackend.png'
     },
     {
       title: 'Express Note taker',
       description: 'Description',
-      image: './assets/images/expressNoteTaker.png'
+      image: '/assets/images/expressNoteTaker.png'
     },
     {
       title: 'ReadMe Generator',
       description: 'Description',
-      image: './assets/images/readMeGen.gif'
+      image: '/assets/images/readMeGen.gif'
     },
   ]
 
@@ -21,12 +21,12 @@ export default function Works() {
     {
       title: "What's Streamin'?",
       description: 'Random Show Generator based on user options.',
-      image: './assets/images/streamin.jpg'
+      image: '/assets/images/streamin.jpg'
     },
     {
       title: 'OldEgg',
       description: 'An electronics ecommerce website.',
-      image: './assets/images/oldEgg.png'
+      image: '/assets/images/oldEgg.png'
     }
   ]
 
