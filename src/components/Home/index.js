@@ -7,7 +7,7 @@ export default function Home() {
         Hi! I'm a web developer and compsci student in NorCal.
       </p>
 
-      <div className='flex flex-row justify-between flex-wrap w-full px-8'>
+      <div className='flex flex-row justify-between flex-wrap w-full px-7'>
         <div className='flex flex-col my-6'>
           <h2 className='text-4xl text-vs-pink'>Tony Vallescas</h2>
           <p>Student, Aspiring Software Engineer</p>
@@ -16,7 +16,7 @@ export default function Home() {
       </div>
 
       <div className='flex flex-col flex-wrap px-5 max-w-lg'>
-        <h3 className='text-2xl text-vs-purple underline underline-offset-8 mb-2'>Work</h3>
+        <h3 className='text-2xl text-vs-purple mb-2'>Work</h3>
         <p className='py-4'>
             I'm a full stack web developer with expertise on the MERN stack. I'm well versed in both frontend,
             and backend frameworks and their respective libraries such as React, Nodejs, Express, NoSql, MySql,
@@ -26,7 +26,7 @@ export default function Home() {
       </div>
 
       <div className='flex flex-col flex-wrap px-5 max-w-lg w-full'>
-        <h4 className='text-2xl text-vs-purple underline underline-offset-8 mb-2'>Bio</h4>
+        <h4 className='text-2xl text-vs-purple mb-2'>Bio</h4>
 
         <div className='flex flex-row py-2'>
           <p className='px-4 font-bold'>2000</p>

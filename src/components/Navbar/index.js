@@ -12,14 +12,14 @@ export default function Navbar(props) {
         </h1>
         <div className="flex justify-center flex-wrap">
           {
-            pages.map(page=> (
+            pages.slice(0,3).map(page=> (
               <button 
                   onClick={() => setCurrentPage(page)} 
                   className="mx-2 hover:text-white"
-                  key={page}
+                  key={page.name}
                   >
                   <span className="text-white">{'<'}</span>
-                    {page}
+                    {page.name}
                   <span className="text-white">{'/>'}</span>
               </button>
             ))

@@ -7,13 +7,22 @@ import { Avatar } from './components/Avatar'
 
 function App() {
   const [pages] = useState([
-    'Home',
-    'Works',
-    'About',
+    {
+      name: 'Home'
+    },
+    {
+      name: 'Works'
+    },
+    {
+      name: 'About'
+    },
+    {
+      name: 'Project'
+    }
   ])
 
   const [currentPage, setCurrentPage] = useState(pages[0])
-  
+
   return (
     <>
       <Navbar 
@@ -23,7 +32,7 @@ function App() {
         
       <main className='flex flex-col items-center bg-vs-bg min-h-screen h-fill text-white p-3 font-mono'>
         <Canvas
-          camera={{ position: [2, 0, 12.25], fov: 15, autoRotate: true }}
+          camera={{ position: [2, 0, 12.25], fov: 15}}
           style={{
             backgroundColor: '#282A36',
             width: '300px',
@@ -39,7 +48,7 @@ function App() {
           <OrbitControls />
         </Canvas>
         
-        <Page currentPage={currentPage}></Page>
+        <Page currentPage={currentPage} setCurrentPage={setCurrentPage}></Page>
       </main>
     </>
   )

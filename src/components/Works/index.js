@@ -1,44 +1,17 @@
-export default function Works({currentPage}) {
-  const works = [
-    {
-      title: 'eCommerce Backend',
-      description: 'Description',
-      image: '/assets/images/eCommBackend.png'
-    },
-    {
-      title: 'Express Note taker',
-      description: 'Description',
-      image: '/assets/images/expressNoteTaker.png'
-    },
-    {
-      title: 'ReadMe Generator',
-      description: 'Description',
-      image: '/assets/images/readMeGen.gif'
-    },
-  ]
+import { works } from "./Works"
+import { collaborations } from "./Collaborations"
 
-  const collaborations = [
-    {
-      title: "What's Streamin'?",
-      description: 'Random Show Generator based on user options.',
-      image: '/assets/images/streamin.jpg'
-    },
-    {
-      title: 'OldEgg',
-      description: 'An electronics ecommerce website.',
-      image: '/assets/images/oldEgg.png'
-    }
-  ]
-
+export default function Works({setCurrentPage}) {
   return (
     <section className="flex justify-self-start flex-col flex-wrap w-[80vw] max-w-[32rem]">
-      <h3 className='text-2xl text-vs-purple underline underline-offset-8 mb-2'>Works</h3>
+      <h3 className='text-2xl text-vs-purple mb-2'>Works</h3>
 
       <div className="flex flex-row flex-wrap p-2"> 
       {
         works.map(work=> 
             <div className="flex flex-col mx-2" key={work.title}>
-                <div 
+                <div
+                  onClick={() => setCurrentPage({name: 'Project', ...work})}
                   style={{background: `url('${work.image}')`, backgroundSize: 'cover', backgroundPosition: 'center'}}
                   className={'w-56 h-36 rounded-xl bg-no-repeat bg-cover bg-center'}>
                 </div>
@@ -49,12 +22,13 @@ export default function Works({currentPage}) {
       }
       </div>
 
-      <h4 className='text-2xl text-vs-purple underline underline-offset-8 mb-2'>Collaborations</h4>
+      <h4 className='text-2xl text-vs-purple mb-2'>Collaborations</h4>
       <div className="flex flex-row flex-wrap p-2"> 
       {
         collaborations.map(collab=> 
             <div className="flex flex-col mx-2" key={collab.title}>
                 <div 
+                  onClick={() => setCurrentPage({name: 'Project', ...collab})}
                   style={{background: `url('${collab.image}')`, backgroundSize: 'cover', backgroundPosition: 'center'}}
                   className={'w-56 h-36 rounded-xl bg-no-repeat bg-cover bg-center'}>
                 </div>
