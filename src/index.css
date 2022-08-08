@@ -577,11 +577,6 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -646,24 +641,8 @@ video {
   width: 14rem;
 }
 
-.w-\[32px\] {
-  width: 32px;
-}
-
-.w-\[70px\] {
-  width: 70px;
-}
-
 .w-\[80px\] {
   width: 80px;
-}
-
-.w-\[75px\] {
-  width: 75px;
-}
-
-.w-\[76px\] {
-  width: 76px;
 }
 
 .max-w-lg {
@@ -750,16 +729,6 @@ video {
   background-color: rgb(40 42 54 / var(--tw-bg-opacity));
 }
 
-.bg-vs-purple {
-  --tw-bg-opacity: 1;
-  background-color: rgb(191 158 238 / var(--tw-bg-opacity));
-}
-
-.bg-vs-green {
-  --tw-bg-opacity: 1;
-  background-color: rgb(98 232 112 / var(--tw-bg-opacity));
-}
-
 .bg-\[url\(\"\.\.\/public\/assets\/images\/selfie\.jpg\"\)\] {
   background-image: url("../public/assets/images/selfie.jpg");
 }
@@ -820,6 +789,18 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.indent-2 {
+  text-indent: 0.5rem;
+}
+
+.indent-4 {
+  text-indent: 1rem;
+}
+
+.indent-6 {
+  text-indent: 1.5rem;
 }
 
 .font-mono {
@@ -893,20 +874,12 @@ video {
           text-decoration-line: underline;
 }
 
-.decoration-2 {
-  text-decoration-thickness: 2px;
-}
-
 .decoration-1 {
   text-decoration-thickness: 1px;
 }
 
 .underline-offset-4 {
   text-underline-offset: 4px;
-}
-
-.underline-offset-8 {
-  text-underline-offset: 8px;
 }
 
 .hover\:cursor-pointer:hover {

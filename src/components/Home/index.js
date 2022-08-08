@@ -17,7 +17,7 @@ export default function Home() {
 
       <div className='flex flex-col flex-wrap px-5 max-w-lg'>
         <h3 className='text-2xl text-vs-purple mb-2'>Work</h3>
-        <p className='py-4'>
+        <p className='py-4 indent-6'>
             I'm a full stack web developer with expertise on the MERN stack. I'm well versed in both frontend,
             and backend frameworks and their respective libraries such as React, Nodejs, Express, NoSql, MySql,
             Graphql, etc. My works and full breadth of knowledge can be found in my portfolio.
@@ -29,38 +29,38 @@ export default function Home() {
         <h4 className='text-2xl text-vs-purple mb-2'>Bio</h4>
 
         <div className='flex flex-row py-2'>
-          <p className='px-4 font-bold'>2000</p>
+          <p className='px-4 font-bold text-vs-green'>2000</p>
           <p>Born in Surigao City, PH</p>
         </div>
 
         <div className='flex flex-row py-2'>
-          <p className='px-4 font-bold'>2019</p>
+          <p className='px-4 font-bold text-vs-green'>2019</p>
           <p>1st In UC Davis Biotech Challenge</p>
         </div>
 
         <div className='flex flex-row py-2'>
-          <p className='px-4 font-bold'>2019</p>
+          <p className='px-4 font-bold text-vs-green'>2019</p>
           <p>Graduated from Elk Grove High w/ 4.1 weighted</p>
         </div>
 
         <div className='flex flex-row py-2'>
-          <p className='px-4 font-bold'>2022</p>
+          <p className='px-4 font-bold text-vs-green'>2022</p>
           <p>Transfer to Sac State for Nursing w/ 3.8</p>
         </div>
 
         <div className='flex flex-row py-2'>
-          <p className='px-4 font-bold'>2022</p>
+          <p className='px-4 font-bold text-vs-green'>2022</p>
           <p>Pivot to Computer Science, retransfer to Com. College</p>
           <p>Currently at 3.7 GPA</p>
         </div>
 
         <div className='flex flex-row py-2'>
-          <p className='px-4 font-bold'>2022</p>
+          <p className='px-4 font-bold text-vs-green'>2022</p>
           <p>Finished UCI Full Stack Bootcamp</p>
         </div>
 
         <div className='flex flex-row py-2'>
-          <p className='px-4 font-bold underline underline-offset-4'>Goal</p>
+          <p className='px-4 font-bold text-vs-green underline underline-offset-4'>Goal</p>
           <p>To find a company/home that will facilitate my growth for the rest of my college years and beyond.</p>
         </div>
       </div>
