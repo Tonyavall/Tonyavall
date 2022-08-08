@@ -14,7 +14,7 @@ export default function Page({currentPage, setCurrentPage}) {
         case 'About':
             return <About/>
         case 'Project':
-            return <Project currentProject={currentPage}/>
+            return <Project currentProject={currentPage} setCurrentPage={setCurrentPage}/>
         default:
             return <Home/>
         }

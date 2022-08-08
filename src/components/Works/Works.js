@@ -3,18 +3,21 @@ export const works = [
         title: 'eCommerce Backend',
         type: 'Works',
         description: 'Description',
-        image: '/assets/images/eCommBackend.png'
+        cover: '/assets/images/eCommBackend.png',
+        images: []
     },
     {
         title: 'Express Note taker',
         type: 'Works',
         description: 'Description',
-        image: '/assets/images/expressNoteTaker.png'
+        cover: '/assets/images/expressNoteTaker.png',
+        images: []
     },
     {
         title: 'ReadMe Generator',
         type: 'Works',
         description: 'Description',
-        image: '/assets/images/readMeGen.gif'
+        cover: '/assets/images/readMeGen.gif',
+        images: []
     },
 ]

@@ -12,8 +12,8 @@ export default function Works({setCurrentPage}) {
             <div className="flex flex-col mx-2" key={work.title}>
                 <div
                   onClick={() => setCurrentPage({name: 'Project', ...work})}
-                  style={{background: `url('${work.image}')`, backgroundSize: 'cover', backgroundPosition: 'center'}}
-                  className={'w-56 h-36 rounded-xl bg-no-repeat bg-cover bg-center'}>
+                  style={{background: `url('${work.cover}')`, backgroundSize: 'cover', backgroundPosition: 'center'}}
+                  className={'w-56 h-36 rounded-xl bg-no-repeat bg-cover bg-center hover:cursor-pointer'}>
                 </div>
                 <p className="m-1 w-56 text-vs-green">{work.title}</p>
                 <p className="m-1 w-56">{work.description}</p>
@@ -29,8 +29,8 @@ export default function Works({setCurrentPage}) {
             <div className="flex flex-col mx-2" key={collab.title}>
                 <div 
                   onClick={() => setCurrentPage({name: 'Project', ...collab})}
-                  style={{background: `url('${collab.image}')`, backgroundSize: 'cover', backgroundPosition: 'center'}}
-                  className={'w-56 h-36 rounded-xl bg-no-repeat bg-cover bg-center'}>
+                  style={{background: `url('${collab.cover}')`, backgroundSize: 'cover', backgroundPosition: 'center'}}
+                  className={'w-56 h-36 rounded-xl bg-no-repeat bg-cover bg-center hover:cursor-pointer'}>
                 </div>
                 <p className="m-1 w-56 text-vs-green">{collab.title}</p>
                 <p className="m-1 w-56">{collab.description}</p>
