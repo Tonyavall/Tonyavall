@@ -8,7 +8,7 @@ export default function Works({setCurrentPage}) {
       <div className="flex flex-row flex-wrap p-2 justify-center"> 
       {
         collaborations.map(collab=> 
-            <div className="flex flex-col mx-2 my-3" key={collab.title}>
+            <div className="flex flex-col mx-2 my-5" key={collab.title}>
                 <div 
                   onClick={() => setCurrentPage({name: 'Project', ...collab})}
                   style={{background: `url('${collab.cover}')`, backgroundSize: 'cover', backgroundPosition: 'center'}}
@@ -21,11 +21,13 @@ export default function Works({setCurrentPage}) {
       }
       </div>
 
+      <hr className="my-6 bg-gray-600 h-[2.5px] border-0 rounded"></hr>
+
       <h3 className='text-2xl text-vs-purple'>Works</h3>
       <div className="flex flex-row flex-wrap p-2 justify-center"> 
       {
         works.map(work=> 
-            <div className="flex flex-col mx-2 my-3" key={work.title}>
+            <div className="flex flex-col mx-2 my-5" key={work.title}>
                 <div
                   onClick={() => setCurrentPage({name: 'Project', ...work})}
                   style={{background: `url('${work.cover}')`, backgroundSize: 'cover', backgroundPosition: 'center'}}
