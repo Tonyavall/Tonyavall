@@ -9,7 +9,8 @@ export const works = [
         website: 'https://tony-pwa-jate.herokuapp.com/',
         github: 'https://github.com/Tonyavall/15-PWA-TextEditor',
         stack: 'Nodejs, Webpack, Babel, Workbox, IndexedDB',
-        platform: 'Web'
+        platform: 'Web',
+        published: '2022'
     },
     {
         title: 'Social Network API',
@@ -21,7 +22,8 @@ export const works = [
         website: '',
         github: 'https://github.com/Tonyavall/14-SocialNetworkAPI',
         stack: 'NoSql (MongoDB, Mongoose), Expressjs, Nodejs',
-        platform: 'NoSql'
+        platform: 'NoSql',
+        published: '2022'
     },
     {
         title: 'LNET',
@@ -33,7 +35,8 @@ export const works = [
         website: 'https://lnet.herokuapp.com/',
         github: 'https://github.com/Tonyavall/12-LNET',
         stack: 'Nodejs, Sequelize (Mysql2), Expressjs, Handlebars, Tailwind, Bcrypt, Heroku',
-        platform: 'Web'
+        platform: 'Web',
+        published: '2022'
     },
     {
         title: 'Ecommerce API',
@@ -45,7 +48,21 @@ export const works = [
         website: '',
         github: 'https://github.com/Tonyavall/11-ECommerce-API',
         stack: 'JavaScript, Nodejs, Mysql2 (Sequelize), Expressjs',
-        platform: 'Mysql'
+        platform: 'Mysql',
+        published: '2022'
+    },
+    {
+        title: 'Employee Tracker',
+        type: 'Works',
+        description: 'Track your employees, roles, and departments with mysql2!',
+        narrative: 'A mysql2 based CLI employee tracker made with NodeJs. Upon initialization, the user is prompted with a menu of questions pertaining to a mysql2 database- questions such as listing, adding, and deleting roles, etc. Query methods such as SELECT, DELETE, INSERT, and JOINS were used to achieve its functionaltiy as well as the most recent ES6 JavaScript syntax for asynchronous code- async/await, try/catch.',
+        cover: '/assets/images/employeeTracker.png',
+        images: [],
+        website: '',
+        github: 'https://github.com/Tonyavall/10-EmployeeTracker',
+        stack: 'JavaScript, Nodejs, Mysql2, Inquirer',
+        platform: 'CLI',
+        published: '2022'
     },
     {
         title: 'Express Note Taker',
@@ -57,7 +74,8 @@ export const works = [
         website: 'https://hw-9-express-notetaker.herokuapp.com/',
         github: 'https://github.com/Tonyavall/9-Express-Note-Taker',
         stack: 'Nodejs, JavaScript, Expressjs, Heroku',
-        platform: 'Web'
+        platform: 'Web',
+        published: '2022'
     },
     {
         title: 'Team Profile Generator',
@@ -69,7 +87,8 @@ export const works = [
         website: '',
         github: 'https://github.com/Tonyavall/8-Team-Profile-Generator',
         stack: 'JavaScript, Nodejs, Inquirer, Jest',
-        platform: 'CLI'
+        platform: 'CLI',
+        published: '2022'
     },
     {
         title: 'ReadMe Generator',
@@ -81,7 +100,8 @@ export const works = [
         website: '',
         github: 'https://github.com/Tonyavall/7-ReadMe-Generator',
         stack: 'JavaScript, Nodejs, Inquirer',
-        platform: 'CLI'
+        platform: 'CLI',
+        published: '2022'
     },
     {
         title: 'Weather Dashboard',
@@ -93,7 +113,8 @@ export const works = [
         website: 'https://tonyavall.github.io/6-Weather-Dashboard/',
         github: 'https://github.com/Tonyavall/6-Weather-Dashboard',
         stack: 'JavaScript, CSS, HTML',
-        platform: 'Web'
+        platform: 'Web',
+        published: '2022'
     },
     {
         title: 'Workday Scheduler',
@@ -105,7 +126,8 @@ export const works = [
         website: 'https://tonyavall.github.io/5-Workday-Schedule/',
         github: 'https://github.com/Tonyavall/5-Workday-Schedule',
         stack: 'JavaScript (Jquery, Momentjs), CSS, HTML',
-        platform: 'Web'
+        platform: 'Web',
+        published: '2022'
     },
     {
         title: 'Coding Quiz App',
@@ -117,7 +139,8 @@ export const works = [
         website: 'https://tonyavall.github.io/4-Coding-Quiz-App/',
         github: 'https://github.com/Tonyavall/4-Coding-Quiz-App',
         stack: 'JavaScript, HTML, CSS',
-        platform: 'Web'
+        platform: 'Web',
+        published: '2022'
     },
     {
         title: 'Password Generator',
@@ -129,6 +152,7 @@ export const works = [
         website: 'https://tonyavall.github.io/3-Password-Generator/',
         github: 'https://github.com/Tonyavall/3-Password-Generator',
         stack: 'JavaScript, HTML, CSS',
-        platform: 'Web'
+        platform: 'Web',
+        published: '2022'
     },
 ]

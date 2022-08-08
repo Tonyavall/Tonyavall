@@ -4,7 +4,7 @@ export function Project({currentProject, setCurrentPage}) {
             <div className="flex flex-row items-center justify-left mb-2">
                 <h3 
                     onClick={() => setCurrentPage({name: 'Works'})}
-                    className="text-vs-purple text-lg ml-4 mr-2 hover:cursor-pointer">{currentProject.type}</h3>
+                    className="text-vs-purple text-lg ml-4 mr-2 hover:cursor-pointer hover:text-2xl">{currentProject.type}</h3>
                 <p>{'>'}</p>
                 <p className="ml-2 text-2xl text-vs-green">{currentProject.title}</p>
             </div>
@@ -13,7 +13,7 @@ export function Project({currentProject, setCurrentPage}) {
                 style={{background: `url('${currentProject.cover}')`, backgroundSize: 'cover', backgroundPosition: 'center'}}
                 className="h-72 rounded-xl mx-4 my-3">
             </div>
-            <p className="mx-4 my-3">{currentProject.description}</p>
+            <p className="mx-4 my-3">{currentProject.narrative}</p>
 
             <div className="flex flex-row">
                 <p className="ml-4 my-3 text-vs-bg bg-vs-teal font-semibold rounded w-[80px] h-[24px] text-center">Platform</p>

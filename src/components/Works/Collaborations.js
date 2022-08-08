@@ -9,7 +9,8 @@ export const collaborations = [
     website: 'https://oldegg.herokuapp.com/',
     github: 'https://github.com/Tonyavall/OldEgg',
     stack: 'Nodejs, Expressjs, Handlebars, Sequelize (MySql2), AWS S3, ESLint, Heroku',
-    platform: 'Web'
+    platform: 'Web',
+    published: '2022'
   },
   {
     title: "What's Streamin'?",
@@ -21,6 +22,7 @@ export const collaborations = [
     website: 'https://swagnarok630.github.io/Stream_Availability/',
     github: 'https://github.com/Tonyavall/Stream_Availability',
     stack: 'HTML, CSS (Bootstrap, CSS.GG), JavaScript',
-    platform: 'Web'
+    platform: 'Web',
+    published: '2022'
   },
 ]

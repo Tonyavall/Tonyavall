@@ -22,7 +22,7 @@ export default function Home() {
             and backend frameworks and their respective libraries such as React, Nodejs, Express, NoSql, MySql,
             Graphql, etc. My works and full breadth of knowledge can be found in my portfolio.
         </p>
-        <button className='text-lg text-vs-bg h-9 w-1/4 self-end rounded-md bg-vs-teal hover:bg-white font-extrabold'>Porfolio</button>
+        <button className='text-lg text-vs-bg h-9 w-[100px] self-center rounded-md bg-vs-teal hover:bg-white font-extrabold'>Porfolio</button>
       </div>
 
       <div className='flex flex-col flex-wrap px-5 max-w-lg w-full'>
