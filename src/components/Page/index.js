@@ -26,11 +26,11 @@ export default function Page({currentPage, setCurrentPage}) {
         case 'Works':
             return <Works setCurrentPage={setCurrentPage} container={container} item={item}/>
         case 'About':
-            return <About/>
+            return <About container={container} item={item}/>
         case 'Project':
             return <Project currentProject={currentPage} setCurrentPage={setCurrentPage} container={container} item={item}/>
         case 'Contact':
-            return <Contact/>
+            return <Contact container={container} item={item}/>
         default:
             return <Home setCurrentPage={setCurrentPage} container={container} item={item}/>
         }
