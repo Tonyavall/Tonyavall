@@ -17,6 +17,9 @@ function App() {
       name: 'About'
     },
     {
+      name: 'Contact'
+    },
+    {
       name: 'Project'
     }
   ])

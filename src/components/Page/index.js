@@ -2,6 +2,7 @@ import React from 'react'
 import Home from '../Home'
 import Works from '../Works'
 import About from '../About'
+import Contact from '../Contact'
 import { Project } from '../Works/Project'
 
 export default function Page({currentPage, setCurrentPage}) {
@@ -28,6 +29,8 @@ export default function Page({currentPage, setCurrentPage}) {
             return <About/>
         case 'Project':
             return <Project currentProject={currentPage} setCurrentPage={setCurrentPage} container={container} item={item}/>
+        case 'Contact':
+            return <Contact/>
         default:
             return <Home setCurrentPage={setCurrentPage} container={container} item={item}/>
         }
