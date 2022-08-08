@@ -6,7 +6,7 @@ export function Project({currentProject, setCurrentPage, container, item}) {
             initial="hidden"
             animate="show"
             variants={container}
-            className="flex flex-col w-[80vw] max-w-[34rem]"
+            className="flex flex-col w-[80vw] max-w-[34rem] mb-[8rem]"
         >
             <div className="flex flex-row items-center justify-left mb-2">
                 <h3 

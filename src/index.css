@@ -583,12 +583,21 @@ video {
   }
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .m-4 {
   margin: 1rem;
 }
 
 .m-1 {
   margin: 0.25rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .my-6 {
@@ -616,18 +625,16 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.mr-6 {
+  margin-right: 1.5rem;
 }
 
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-\[8rem\] {
+  margin-bottom: 8rem;
 }
 
 .ml-4 {
@@ -648,6 +655,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-96 {
+  height: 24rem;
 }
 
 .h-32 {
@@ -672,10 +683,6 @@ video {
 
 .h-\[24px\] {
   height: 24px;
-}
-
-.h-96 {
-  height: 24rem;
 }
 
 .min-h-screen {
@@ -746,16 +753,16 @@ video {
   justify-content: center;
 }
 
-.justify-between {
-  justify-content: space-between;
-}
-
 .self-center {
   align-self: center;
 }
 
 .justify-self-start {
   justify-self: start;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
 }
 
 .rounded-md {
@@ -774,12 +781,12 @@ video {
   border-radius: 0.25rem;
 }
 
-.rounded-2xl {
-  border-radius: 1rem;
-}
-
 .border-0 {
   border-width: 0px;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .bg-vs-bg {
@@ -830,6 +837,11 @@ video {
   padding: 1rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .px-7 {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
@@ -838,11 +850,6 @@ video {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .py-2 {
@@ -877,6 +884,11 @@ video {
   line-height: 2rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -887,9 +899,22 @@ video {
   line-height: 1.75rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-\[10rem\] {
+  font-size: 10rem;
+}
+
+.text-\[7\.5rem\] {
+  font-size: 7.5rem;
 }
 
 .font-extrabold {
@@ -914,6 +939,11 @@ video {
   color: rgb(191 158 238 / var(--tw-text-opacity));
 }
 
+.text-vs-green {
+  --tw-text-opacity: 1;
+  color: rgb(98 232 112 / var(--tw-text-opacity));
+}
+
 .text-vs-pink {
   --tw-text-opacity: 1;
   color: rgb(242 134 196 / var(--tw-text-opacity));
@@ -922,11 +952,6 @@ video {
 .text-vs-bg {
   --tw-text-opacity: 1;
   color: rgb(40 42 54 / var(--tw-text-opacity));
-}
-
-.text-vs-green {
-  --tw-text-opacity: 1;
-  color: rgb(98 232 112 / var(--tw-text-opacity));
 }
 
 .text-vs-teal {
@@ -967,6 +992,11 @@ video {
 .hover\:text-2xl:hover {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.hover\:text-7xl:hover {
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
 .hover\:text-white:hover {

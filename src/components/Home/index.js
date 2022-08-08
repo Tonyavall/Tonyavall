@@ -14,8 +14,8 @@ export default function Home({setCurrentPage, container, item}) {
           Hi! I'm a web developer and compsci student in NorCal.
         </p>
 
-        <div className='flex flex-row justify-between flex-wrap w-full px-7'>
-          <div className='flex flex-col my-6'>
+        <div className='flex flex-row justify-center flex-wrap w-full px-7'>
+          <div className='flex flex-col my-6 mr-6'>
             <h2 className='text-4xl text-vs-pink'>Tony Vallescas</h2>
             <p>Student, Aspiring Software Engineer</p>
           </div>

@@ -14,7 +14,7 @@ export default function Navbar(props) {
         </h1>
         <div className="flex justify-center flex-wrap">
           {
-            pages.slice(0,4).map(page=> (
+            pages.slice(1,4).map(page=> (
               <button 
                   onClick={() => setCurrentPage(page)} 
                   className="mx-2 hover:text-white"
