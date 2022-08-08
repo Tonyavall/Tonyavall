@@ -567,9 +567,9 @@ video {
   margin-right: 0.5rem;
 }
 
-.my-3 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .mx-4 {
@@ -577,19 +577,9 @@ video {
   margin-right: 1rem;
 }
 
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .mb-2 {
@@ -624,28 +614,16 @@ video {
   height: 9rem;
 }
 
+.h-\[2\.5px\] {
+  height: 2.5px;
+}
+
 .h-72 {
   height: 18rem;
 }
 
 .h-\[24px\] {
   height: 24px;
-}
-
-.h-2 {
-  height: 0.5rem;
-}
-
-.h-1 {
-  height: 0.25rem;
-}
-
-.h-\[5px\] {
-  height: 5px;
-}
-
-.h-\[2\.5px\] {
-  height: 2.5px;
 }
 
 .min-h-screen {
@@ -678,10 +656,6 @@ video {
 
 .w-\[80px\] {
   width: 80px;
-}
-
-.w-2 {
-  width: 0.5rem;
 }
 
 .max-w-lg {
@@ -752,10 +726,6 @@ video {
   border-width: 0px;
 }
 
-.border-none {
-  border-style: none;
-}
-
 .bg-vs-bg {
   --tw-bg-opacity: 1;
   background-color: rgb(40 42 54 / var(--tw-bg-opacity));
@@ -774,11 +744,6 @@ video {
 .bg-\[\#282A36\] {
   --tw-bg-opacity: 1;
   background-color: rgb(40 42 54 / var(--tw-bg-opacity));
-}
-
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\"\.\.\/public\/assets\/images\/selfie\.jpg\"\)\] {
@@ -911,11 +876,6 @@ video {
 .text-vs-teal {
   --tw-text-opacity: 1;
   color: rgb(151 225 241 / var(--tw-text-opacity));
-}
-
-.text-gray-600 {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .underline {

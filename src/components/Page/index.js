@@ -8,7 +8,7 @@ export default function Page({currentPage, setCurrentPage}) {
   const changeView = page => {
     switch(page.name) {
         case 'Home':
-            return <Home/>
+            return <Home setCurrentPage={setCurrentPage}/>
         case 'Works':
             return <Works setCurrentPage={setCurrentPage}/>
         case 'About':

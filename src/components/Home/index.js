@@ -1,6 +1,5 @@
-export default function Home() {
-  // highlight work text
-  // name too tight w profile pic
+export default function Home({setCurrentPage}) {
+  // highlight work paragraph text -vy
   return (
     <section className="flex flex-col flex-wrap items-center">      
       <p className="text-center bg-gray-600 m-4 p-3 rounded-md">
@@ -22,7 +21,10 @@ export default function Home() {
             and backend frameworks and their respective libraries such as React, Nodejs, Express, NoSql, MySql,
             Graphql, etc. My works and full breadth of knowledge can be found in my portfolio.
         </p>
-        <button className='text-lg text-vs-bg h-9 w-[100px] self-center rounded-md bg-vs-teal hover:bg-white font-extrabold'>Porfolio</button>
+        <button 
+          onClick={() => setCurrentPage({name: 'Works'})}
+          className='text-md text-vs-bg h-9 w-[100px] self-center rounded-md bg-vs-teal hover:bg-white font-extrabold'>Portfolio
+        </button>
       </div>
 
       <div className='flex flex-col flex-wrap px-5 max-w-lg w-full'>
