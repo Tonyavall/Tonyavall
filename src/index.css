@@ -583,10 +583,6 @@ video {
   }
 }
 
-.m-2 {
-  margin: 0.5rem;
-}
-
 .m-4 {
   margin: 1rem;
 }
@@ -647,6 +643,10 @@ video {
 
 .ml-2 {
   margin-left: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .flex {
@@ -889,6 +889,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -897,24 +902,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-\[10rem\] {
-  font-size: 10rem;
-}
-
-.text-\[7\.5rem\] {
-  font-size: 7.5rem;
 }
 
 .font-extrabold {
@@ -992,11 +979,6 @@ video {
 .hover\:text-2xl:hover {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.hover\:text-7xl:hover {
-  font-size: 4.5rem;
-  line-height: 1;
 }
 
 .hover\:text-white:hover {

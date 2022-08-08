@@ -75,7 +75,7 @@ export default function About({item, container}) {
                         {
                         frontend.map(framework => {
                             return (
-                                <li className='p-2'>{framework}</li>
+                                <li key={framework} className='p-2'>{framework}</li>
                             )
                         })
                         }
@@ -92,7 +92,7 @@ export default function About({item, container}) {
                         {
                         backend.map(framework => {
                             return (
-                                <li className='p-2'>{framework}</li>
+                                <li key={framework} className='p-2'>{framework}</li>
                             )
                         })
                         }
@@ -108,7 +108,7 @@ export default function About({item, container}) {
                         {
                         dev.map(framework => {
                             return (
-                                <li className='p-2'>{framework}</li>
+                                <li key={framework} className='p-2'>{framework}</li>
                             )
                         })
                         }

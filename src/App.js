@@ -40,6 +40,7 @@ function App() {
             backgroundColor: '#282A36',
             width: '300px',
             height: '350px',
+            marginBottom: '2em'
           }}
         >
           <ambientLight intensity={1.25} />

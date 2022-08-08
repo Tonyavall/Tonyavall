@@ -27,11 +27,13 @@ export default function Home({setCurrentPage, container, item}) {
           <p className='py-4 indent-6'>
               I'm a full stack web developer with expertise on the MERN stack. I'm well versed in both frontend,
               and backend frameworks and their respective libraries such as React, Nodejs, Express, NoSql, MySql,
-              Graphql, etc. My works and full breadth of knowledge can be found in my portfolio.
+              Graphql, etc. My works and full breadth of knowledge can be found in my Works and About page.
           </p>
           <button 
             onClick={() => setCurrentPage({name: 'Works'})}
-            className='text-md text-vs-bg h-9 w-[100px] self-center rounded-md bg-vs-teal hover:bg-white font-extrabold'>Portfolio
+            className='text-md text-vs-bg h-9 w-[100px] self-center rounded-md bg-vs-teal hover:bg-white font-extrabold'
+          >
+            Works
           </button>
         </div>
 
