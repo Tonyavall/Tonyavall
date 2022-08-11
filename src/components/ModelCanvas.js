@@ -18,7 +18,7 @@ const TavatarCanvas = () => {
             <ambientLight intensity={1.25} />
             <directionalLight intensity={1.5} castShadow={true} shadow={[512,512,.5,500]}/>
             <Suspense fallback={null}>
-            <Tavatar position={[.375, -1.4, 0]} scale={[1.6,1.6,1.6]}/> 
+                <Tavatar position={[.375, -1.4, 0]} scale={[1.6,1.6,1.6]}/> 
             </Suspense>
             <OrbitControls autoRotate={true}/>
         </Canvas>

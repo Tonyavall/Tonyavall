@@ -2,20 +2,23 @@ import { works } from "../../lib/Works"
 import { collaborations } from "../../lib/Collaborations"
 import { motion } from 'framer-motion'
 
-export default function Works({setCurrentPage, container, item}) {
+export default function Works({setCurrentPage, container}) {
+
   return (
     <motion.section 
       className="flex justify-self-start flex-col flex-wrap w-[80vw] max-w-[32rem]"
       variants={container}
       initial="hidden"
       animate="show"
+      key="container"
+      exit="workExit"
     >
-      <h4 className='text-2xl text-vs-purple'>Collaborations</h4>
-      <motion.div variants={item}>
-        <div className="flex flex-row flex-wrap p-2 justify-center"> 
+      <div>
+        <h4 className='text-2xl text-vs-purple'>Collaborations</h4>
+        <div className="flex flex-row flex-wrap justify-center"> 
         {
           collaborations.map(collab=> 
-              <div className="flex flex-col mx-2 my-5" key={collab.title}>
+              <div className="flex flex-col mx-3 my-5" key={collab.title}>
                   <div 
                     onClick={() => setCurrentPage({name: 'Project', ...collab})}
                     style={{background: `url('${collab.cover}')`, backgroundSize: 'cover', backgroundPosition: 'center'}}
@@ -31,10 +34,10 @@ export default function Works({setCurrentPage, container, item}) {
         <hr className="my-6 bg-gray-600 h-[2.5px] border-0 rounded"></hr>
 
         <h3 className='text-2xl text-vs-purple'>Works</h3>
-        <div className="flex flex-row flex-wrap p-2 justify-center"> 
+        <div className="flex flex-row flex-wrap justify-center"> 
         {
           works.map(work=> 
-              <div className="flex flex-col mx-2 my-5" key={work.title}>
+              <div className="flex flex-col mx-3 my-5" key={work.title}>
                   <div
                     onClick={() => setCurrentPage({name: 'Project', ...work})}
                     style={{background: `url('${work.cover}')`, backgroundSize: 'cover', backgroundPosition: 'center'}}
@@ -46,7 +49,7 @@ export default function Works({setCurrentPage, container, item}) {
           )
         }
         </div>
-      </motion.div>
+      </div>
     </motion.section>
   )
 }

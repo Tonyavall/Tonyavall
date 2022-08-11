@@ -11,34 +11,37 @@ export default function Page({currentPage, setCurrentPage}) {
         show: {
             opacity: 1,
             transition: {
-                delayChildren: 0.25
+                delay: .5
+            }
+        },
+        exit: { 
+            opacity: 0,
+            transition: {
+                duration: .5,
+                type: 'easeInOut'
             }
         }
     }
-    const item = {
-        hidden: { opacity: 0 },
-        show: { opacity: 1 }
-    }
-  const changeView = page => {
+
+    const changeView = page => {
     switch(page.name) {
         case 'Home':
-            return <Home setCurrentPage={setCurrentPage} container={container} item={item}/>
+            return <Home setCurrentPage={setCurrentPage} container={container}/>
         case 'Works':
-            return <Works setCurrentPage={setCurrentPage} container={container} item={item}/>
+            return <Works setCurrentPage={setCurrentPage} container={container}/>
         case 'About':
-            return <About container={container} item={item}/>
+            return <About container={container}/>
         case 'Project':
-            return <Project currentProject={currentPage} setCurrentPage={setCurrentPage} container={container} item={item}/>
+            return <Project currentProject={currentPage} setCurrentPage={setCurrentPage} container={container}/>
         case 'Contact':
-            return <Contact container={container} item={item}/>
+            return <Contact container={container}/>
         default:
-            return <Home setCurrentPage={setCurrentPage} container={container} item={item}/>
+            return <Home setCurrentPage={setCurrentPage} container={container}/>
         }
-  }
-
-  return (
-    <section>
-        {changeView(currentPage)}
-    </section>
-  )
+    }
+    return (
+        <>
+            {changeView(currentPage)}
+        </>
+    )
 }

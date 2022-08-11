@@ -1,12 +1,14 @@
 import { motion } from 'framer-motion'
 
-export function Project({currentProject, setCurrentPage, container, item}) {
+export function Project({currentProject, setCurrentPage, container}) {
     return (
         <motion.section 
             initial="hidden"
             animate="show"
             variants={container}
             className="flex flex-col w-[80vw] max-w-[34rem] mb-[8rem]"
+            exit="exit"
+            key="projectExit"
         >
             <div className="flex flex-row items-center justify-left mb-2">
                 <h3 
@@ -16,7 +18,7 @@ export function Project({currentProject, setCurrentPage, container, item}) {
                 <p className="ml-2 text-2xl text-vs-green">{currentProject.title}</p>
             </div>
             
-            <motion.div variants={item}>
+            <div>
                 <div 
                     style={{background: `url('${currentProject.cover}')`, backgroundSize: 'cover', backgroundPosition: 'center'}}
                     className="h-72 rounded-xl mx-4 my-3">
@@ -53,7 +55,7 @@ export function Project({currentProject, setCurrentPage, container, item}) {
                         className="ml-4 my-3 text-vs-green underline underline-offset-4 decoration-1"> See source code here.
                     </a>
                 </div>
-            </motion.div>
+            </div>
         </motion.section>
     )
 }

@@ -1,15 +1,17 @@
 import { motion } from 'framer-motion'
-import { Socials } from './Socials'
+import { Socials } from '../../lib/Socials'
 
-export default function Contact({container, item}) {
+export default function Contact({container}) {
     return (
         <motion.section 
             initial="hidden"
             animate="show"
             className="flex justify-self-start flex-col flex-wrap w-[80vw] max-w-[32rem]"
             variants={container}
+            exit="exit"
+            key="contactExit"
         >
-            <motion.div variants={item}>
+            <div>
                 <h3 className='text-2xl text-vs-purple'>Socials</h3>
                     <div className='flex flex-row flex-wrap justify-center items-center p-2 text-xl'>
                         {
@@ -31,7 +33,7 @@ export default function Contact({container, item}) {
                         })
                         }
                     </div>
-            </motion.div>
+            </div>
         </motion.section>
     )
 }

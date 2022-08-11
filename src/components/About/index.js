@@ -21,7 +21,7 @@ import { SiInsomnia } from 'react-icons/si'
 import { AiFillSlackCircle } from 'react-icons/ai'
 import { DiVisualstudio } from 'react-icons/di'
 
-export default function About({item, container}) {
+export default function About({container}) {
     const frontend = [
         'React',
         'HTML',
@@ -53,8 +53,10 @@ export default function About({item, container}) {
             animate="show"
             className="flex justify-self-start flex-col flex-wrap w-[80vw] max-w-[32rem]"
             variants={container}
+            exit="exit"
+            key="aboutExit"
         >
-            <motion.div variants={item}>
+            <div>
                 <h4 className='text-2xl text-vs-purple'>About</h4>
                 <div className="flex flex-col flex-wrap justify-center items-center p-2">
                     <p className="py-4 indent-6">
@@ -115,7 +117,7 @@ export default function About({item, container}) {
                         }
                     </ul>
                 </div>
-            </motion.div>
+            </div>
         </motion.section>
     )
 }
