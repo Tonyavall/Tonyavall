@@ -19,6 +19,7 @@ export default function Contact({container, item}) {
                                 href={social.link}
                                 target="_blank" 
                                 rel="noopener noreferrer"
+                                key={social.name}
                                 className='flex flex-row flex-wrap justify-center items-center p-2 text-xl mx-4'
                             >
                                 {social.icon}

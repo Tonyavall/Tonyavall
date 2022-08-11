@@ -30,7 +30,8 @@ export default function About({item, container}) {
         'Tailwind',
         'Bootstrap',
         'Jquery',
-        'Handlebars'
+        'Handlebars',
+        'Threejs'
     ]
     const backend = [
         'Nosql',
