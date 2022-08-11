@@ -1,5 +1,5 @@
-import { works } from "../../../lib/Works"
-import { collaborations } from "../../../lib/Collaborations"
+import { works } from "../../lib/Works"
+import { collaborations } from "../../lib/Collaborations"
 import { motion } from 'framer-motion'
 
 export default function Works({setCurrentPage, container, item}) {
