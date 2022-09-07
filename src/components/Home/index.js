@@ -12,8 +12,6 @@ export default function Home({setCurrentPage, container}) {
   //   }
   // }, [])
   return (
-    <AnimatePresence>
-      {
       <motion.section
         variants={container}
         initial="hidden"
@@ -50,49 +48,7 @@ export default function Home({setCurrentPage, container}) {
               Works
             </button>
           </div>
-
-          <div className='flex flex-col flex-wrap px-5 max-w-lg w-full'>
-            <h4 className='text-2xl text-vs-purple mb-2 font-bold'>Bio</h4>
-
-            <div className='flex flex-row py-2'>
-              <p className='px-4'>2000</p>
-              <p>Born in Surigao City, Philippines</p>
-            </div>
-
-            <div className='flex flex-row py-2'>
-              <p className='px-4'>2019</p>
-              <p>1st In UC Davis Biotech Challenge</p>
-            </div>
-
-            <div className='flex flex-row py-2'>
-              <p className='px-4'>2019</p>
-              <p>Graduated from Elk Grove High w/ 4.1 weighted</p>
-            </div>
-
-            <div className='flex flex-row py-2'>
-              <p className='px-4'>2022</p>
-              <p>Transfer to Sac State for Nursing w/ 3.8</p>
-            </div>
-
-            <div className='flex flex-row py-2'>
-              <p className='px-4'>2022</p>
-              <p>Pivot to Computer Science, retransfer to Com. College</p>
-              <p>Currently at 3.7 GPA</p>
-            </div>
-
-            <div className='flex flex-row py-2'>
-              <p className='px-4'>2022</p>
-              <p>Finished UCI Full Stack Bootcamp</p>
-            </div>
-
-            <div className='flex flex-row py-2'>
-              <p className='px-4 text-vs-green'>Goal</p>
-              <p>To find a company/home that will facilitate my growth for the rest of my college years and beyond.</p>
-            </div>
-          </div>
         </div> 
       </motion.section>
-      }
-    </AnimatePresence>
   )
 }

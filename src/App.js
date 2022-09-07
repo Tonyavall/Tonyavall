@@ -1,42 +1,25 @@
-import React, { useState } from 'react'
-import Navbar from './components/Navbar'
-import Page from './components/Page'
-import Tavatar from './components/ModelCanvas'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './components/layouts/main'
+import Home from './pages/index'
+import Works from './pages/works'
+import SingleWork from './pages/works/SingleWork'
+import About from './pages/About'
+import Contact from './pages/Contact'
 
 function App() {
-  const [pages] = useState([
-    {
-      name: 'Home'
-    },
-    {
-      name: 'Works'
-    },
-    {
-      name: 'About'
-    },
-    {
-      name: 'Contact'
-    },
-    {
-      name: 'Project'
-    }
-  ])
-
-  const [currentPage, setCurrentPage] = useState(pages[0])
 
   return (
-    <>
-      <Navbar 
-        setCurrentPage={setCurrentPage} 
-        pages={pages}> 
-      </Navbar>
-        
-      <main className='flex flex-col items-center bg-vs-bg min-h-screen h-fill text-white p-3 font-mono'>
-        <Tavatar/>
-        
-        <Page currentPage={currentPage} setCurrentPage={setCurrentPage}></Page>
-      </main>
-    </>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/works" element={<Works/>}/>
+          <Route path="/works/:work" element={<SingleWork/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+        </Routes>
+      </Layout>
+    </Router>
   )
 }
 

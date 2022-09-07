@@ -4,6 +4,7 @@ import Works from '../Works'
 import About from '../About'
 import Contact from '../Contact'
 import { Project } from '../Works/Project'
+import { AnimatePresence } from 'framer-motion'
 
 export default function Page({currentPage, setCurrentPage}) {
     const container = {
@@ -17,7 +18,7 @@ export default function Page({currentPage, setCurrentPage}) {
         exit: { 
             opacity: 0,
             transition: {
-                duration: .5,
+                duration: 3,
                 type: 'easeInOut'
             }
         }
@@ -40,8 +41,8 @@ export default function Page({currentPage, setCurrentPage}) {
         }
     }
     return (
-        <>
+        <AnimatePresence>
             {changeView(currentPage)}
-        </>
+        </AnimatePresence>
     )
 }

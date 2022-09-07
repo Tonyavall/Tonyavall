@@ -27,11 +27,14 @@ export default function About({container}) {
         'HTML',
         'CSS',
         'JavaScript',
+        'TypeScript',
+        'NEXTjs',
         'Tailwind',
         'Bootstrap',
         'Jquery',
         'Handlebars',
-        'Threejs'
+        'Threejs',
+        'ChakraUI'
     ]
     const backend = [
         'Nosql',
@@ -40,6 +43,7 @@ export default function About({container}) {
         'Mysql2',
         'Sequelize',
         'Nodejs',
+        'AWS S3'
     ]
     const dev = [
         'Slack',
