@@ -1,7 +1,7 @@
 import { BsGithub } from 'react-icons/bs'
 import { AiFillLinkedin } from 'react-icons/ai'
 
-export const Socials = [
+const socials = [
     {
         name: 'Github',
         link: 'https://github.com/Tonyavall',
@@ -13,3 +13,5 @@ export const Socials = [
         icon: <AiFillLinkedin/>
     }
 ]
+
+export default socials

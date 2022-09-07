@@ -5,6 +5,7 @@ import Works from './pages/works'
 import SingleWork from './pages/works/SingleWork'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Error from './pages/Error'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/works/:work" element={<SingleWork/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/contact" element={<Contact/>}/>
+          <Route path="*" element={<Error/>}/>
         </Routes>
       </Layout>
     </Router>

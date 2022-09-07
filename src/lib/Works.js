@@ -1,4 +1,4 @@
-export const works = [
+const works = [
     {
         title: 'TextEditor',
         type: 'Works',
@@ -156,3 +156,5 @@ export const works = [
         published: '2022'
     },
 ]
+
+export default works;

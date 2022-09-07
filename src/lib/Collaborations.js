@@ -1,4 +1,5 @@
-export const collaborations = [
+// do not use non alphanumeric characters. spaces are ok
+const collaborations = [
   {
     title: 'OldEgg',
     type: 'Collaborations',
@@ -13,7 +14,7 @@ export const collaborations = [
     published: '2022'
   },
   {
-    title: "What's Streamin'?",
+    title: "What's Streamin'",
     type: 'Collaborations',
     description: "Don't know what show to watch? See What's Streamin'",
     narrative: 'A simple web app that randomly generates a movie or show to watch based on user input criteria',
@@ -26,3 +27,5 @@ export const collaborations = [
     published: '2022'
   },
 ]
+
+export default collaborations;

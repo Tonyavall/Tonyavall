@@ -1,14 +1,14 @@
 import { Helmet } from 'react-helmet'
 import Navbar from '../navbar';
-import Tavatar from './components/ModelCanvas'
+import Tavatar from '../ModelCanvas'
 
 const Main = ({ children }) => {
     return (
         <main className='flex flex-col items-center bg-vs-bg min-h-screen h-fill text-white p-3 font-mono'>
             <Helmet>
-                <title>Tonyavall</title>
-
-                <meta name="Portfolio" content="Tony's porfolio website."/>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="Portfolio" content="Tony Vallescas' porfolio website."/>
+                <title>Tony Vallescas - Homepage</title>
             </Helmet>
 
             <Navbar/>
@@ -16,7 +16,6 @@ const Main = ({ children }) => {
 
             {children}
         </main>
-
     )
 }
 
