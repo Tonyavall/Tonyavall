@@ -1,4 +1,4 @@
-import Layout from '../../components/layouts/article'
+import Layout from '../../components/layouts/Article'
 import works from '../../lib/works';
 import collaborations from '../../lib/collaborations';
 import { useParams, Link } from 'react-router-dom';
@@ -15,7 +15,7 @@ const SingleWork = () => {
         <Layout title={currentProject?.title}>
             <div className="flex flex-row items-center justify-left mb-2">
                 <Link to='/works'>
-                    <h3 className="text-vs-purple text-lg ml-4 mr-2 hover:cursor-pointer hover:text-2xl hover:transition-all">
+                    <h3 className="text-vs-teal text-lg ml-4 mr-2 hover:cursor-pointer hover:text-2xl hover:transition-all">
                         {currentProject?.type}
                     </h3>
                 </Link>
@@ -23,7 +23,7 @@ const SingleWork = () => {
                 <p className="ml-2 text-2xl text-vs-green">{currentProject?.title}</p>
             </div>
             
-            <div>
+            <div className="mb-20">
                 <div 
                     style={{background: `url('${currentProject?.cover}')`, backgroundSize: 'cover', backgroundPosition: 'center'}}
                     className="h-72 rounded-xl mx-4 my-3">

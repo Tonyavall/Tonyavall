@@ -4,7 +4,7 @@ import Tavatar from '../ModelCanvas'
 
 const Main = ({ children }) => {
     return (
-        <main className='flex flex-col items-center bg-vs-bg min-h-screen h-fill text-white p-3 font-mono'>
+        <main className='flex flex-col items-center bg-vs-bg min-h-screen h-fill text-white font-mono'>
             <Helmet>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="Portfolio" content="Tony Vallescas' porfolio website."/>

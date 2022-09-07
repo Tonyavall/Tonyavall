@@ -1,4 +1,4 @@
-import Layout from '../components/layouts/article'
+import Layout from '../components/layouts/Article'
 
 const Error = () => {
     return (
