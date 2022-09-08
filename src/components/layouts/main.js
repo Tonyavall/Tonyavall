@@ -1,8 +1,11 @@
 import { Helmet } from 'react-helmet'
-import Navbar from '../navbar';
+import Navbar from '../Navbar';
 import Tavatar from '../ModelCanvas'
+import { useLocation } from 'react-router-dom';
 
 const Main = ({ children }) => {
+    const { pathname } = useLocation()
+
     return (
         <main className='flex flex-col items-center bg-vs-bg min-h-screen h-fill text-white font-mono'>
             <Helmet>
@@ -12,7 +15,7 @@ const Main = ({ children }) => {
             </Helmet>
 
             <Navbar/>
-            <Tavatar/>
+            {pathname !== "/contact/resume" && <Tavatar/>}
 
             {children}
         </main>

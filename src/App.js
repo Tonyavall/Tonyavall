@@ -6,6 +6,7 @@ import SingleWork from './pages/works/SingleWork'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Error from './pages/Error'
+import Resume from './pages/Resume';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/works/:work" element={<SingleWork/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/contact" element={<Contact/>}/>
+          <Route path="/contact/resume" element={<Resume />}/>
           <Route path="*" element={<Error/>}/>
         </Routes>
       </Layout>

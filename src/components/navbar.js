@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom"
-import Burger from "./burger"
+import Burger from "./Burger"
 
 const Navbar = () => {
     const { pathname } = useLocation()
@@ -24,7 +24,7 @@ const Navbar = () => {
                 pages.map(({name})=> (
                     <Link to={`/${name}`} key={name}>
                         <button
-                            className={`hover:text-vs-green w-[110px] h-8 capitalize ${name === currentLocation ? 'bg-[#1F2937] text-vs-green' : 'text-vs-teal'}`}
+                            className={`hover:text-vs-green w-[110px] h-8 capitalize ${name === currentLocation ? 'text-vs-green' : 'text-vs-teal'}`}
                             data-id={name}
                         >
                             <span className="text-white">{name === currentLocation ? '< ' : '<'}</span>
