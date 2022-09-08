@@ -13,7 +13,7 @@ const Works = () => {
                     <div className="flex flex-col mx-3 my-5">
                         <div 
                             style={{background: `url('${collab.cover}')`, backgroundSize: 'cover', backgroundPosition: 'center'}}
-                            className={'w-56 h-36 rounded-xl bg-no-repeat bg-cover bg-center hover:cursor-pointer'}>
+                            className={'w-[325px] h-[175px] md:w-56 md:h-36 rounded-xl bg-no-repeat bg-cover bg-center hover:cursor-pointer'}>
                         </div>
                         <p className="m-1 w-56 text-vs-green">{collab.title}</p>
                         <p className="m-1 w-56">{collab.description}</p>
@@ -28,8 +28,8 @@ const Works = () => {
                 <Link to={`/works/${work.title}`} key={work.title}>
                     <div className="flex flex-col mx-3 my-5">
                         <div
-                            style={{background: `url('${work.cover}')`, backgroundSize: 'cover', backgroundPosition: 'center'}}
-                            className={'w-56 h-36 rounded-xl bg-no-repeat bg-cover bg-center hover:cursor-pointer'}>
+                            style={{background: `url('${work.cover}')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}
+                            className={'w-[325px] h-[175px] md:w-56 md:h-36 rounded-xl bg-no-repeat bg-cover bg-center hover:cursor-pointer'}>
                         </div>
                         <p className="m-1 w-56 text-vs-green">{work.title}</p>
                         <p className="m-1 w-56">{work.description}</p>

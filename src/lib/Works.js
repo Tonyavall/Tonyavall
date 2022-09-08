@@ -1,5 +1,18 @@
 const works = [
     {
+        title: 'Fitter',
+        type: 'Works',
+        description: 'An instagram clone with a twist!',
+        narrative: 'Narrative here.',
+        cover: 'https://fitterapp.s3.us-west-1.amazonaws.com/fitter-logo.png',
+        images: [],
+        website: 'https://fitterapp.vercel.app/',
+        github: 'https://github.com/Tonyavall/Fitterapp',
+        stack: 'NEXTJs, TypeScript, AWS S3, Apollo Client/Server, NoSQL/Mongoose, ChakraUI',
+        platform: 'Web',
+        published: '2022'
+    },
+    {
         title: 'TextEditor',
         type: 'Works',
         description: 'A progressive web application using IndexedDB.',
