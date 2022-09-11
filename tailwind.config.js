@@ -10,7 +10,8 @@ module.exports = {
         'vs-pink': '#F286C4',
         'vs-green': '#62E870',
         'vs-purple': '#BF9EEE',
-        'vs-bg': '#282A36'
+        'vs-bg': '#282A36',
+        'vs-dblue': '#1F2937'
       }
     },
   },
