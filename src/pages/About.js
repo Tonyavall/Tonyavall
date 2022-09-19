@@ -1,5 +1,6 @@
 import Layout from '../components/layouts/Article'
 import techStack from '../lib/techStack'
+import { Link } from 'react-router-dom'
 
 const About = () => {
 
@@ -7,9 +8,16 @@ const About = () => {
         <Layout title="About">
             <div>
                 <h4 className='text-2xl text-vs-teal ml-4 mt-4'>About</h4>
-                <div className="flex flex-col flex-wrap justify-center items-center p-2">
-                    <p className="py-4 indent-6">
-                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                <div className="flex flex-col flex-wrap justify-center items-center p-4">
+                    <p className="pt-4 pb-2 indent-6">
+                        These are the languages, libraries, and overall technologies I've worked with since becoming a full stack web developer.
+                        From the <span className='text-vs-purple'>frontend fundamentals</span>- HTML/CSS/JavaScript, to the <span className='text-vs-purple'>backend architecture</span>- Express/MySQL/NoSQL/ORMS/Node, and, finally, everything 
+                        <span className='text-vs-purple'> between</span>- APIs/Express/Graphql. 
+                    </p>
+                    <p className="pb-4 indent-6">
+                        My most recent work involves    serverside rendering with NEXT, React, and AWS S3 in TypeScript, which
+                        can be found <Link to='/works/Fitter' className='text-vs-green'>here.</Link> I'm currently adept in the <span className='text-vs-purple'>MERN</span> stack, however, I plan
+                        on branching out to Vue, Angular and the LAMP stack, which includes PHP.
                     </p>
                     
                     <p className="text-lg text-vs-green">Frontend</p>

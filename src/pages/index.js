@@ -8,15 +8,15 @@ const Home = () => {
             <p className="text-center bg-[#1F2937] mx-4 mt-6 p-3">
                 Hi! I'm a web developer and compsci student in NorCal.
             </p>
-            
-            <div className='h-1 min-w-[170px] w-[14vw] bg-vs-pink mb-6 mx-4'></div>
+
+            <div className='h-[3px] min-w-[170px] w-[14vw] bg-vs-pink mb-6 mx-4'></div>
 
             <div className='flex flex-row justify-center sm:justify-between flex-wrap w-full px-5'>
                 <div className='flex flex-col my-6'>
-                <h2 className='text-4xl text-vs-pink font-bold'>Tony Vallescas</h2>
-                <p className='italic'>Student, Aspiring Software Engineer</p>
+                <h2 className='text-4xl font-bold'>Tony Vallescas</h2>
+                <p className='italic'>Full Stack Web Developer</p>
                 </div>
-                <div className='bg-[url("../public/assets/images/selfie.jpg")] w-32 h-32 bg-no-repeat bg-contain bg-center rounded-full border-[5px] border-[#1F2937] border-b-vs-pink border-l-vs-pink'></div>
+                <div className='bg-[url("../public/assets/images/selfie.jpg")] w-32 h-32 bg-no-repeat bg-contain bg-center rounded-full border-[3px] border-[#1F2937] border-b-vs-pink border-l-vs-pink'></div>
             </div>
 
             <div className='flex flex-col flex-wrap px-5 max-w-lg mb-10'>
@@ -35,7 +35,7 @@ const Home = () => {
                                 >
                                     Works
                                 </button>
-                                <div className='h-1 w-[50px] bg-vs-pink'></div>
+                                <div className='h-[3px] w-[50px] bg-vs-pink'></div>
                             </div>
                         </Link>
                         <Link to="/about">
@@ -45,7 +45,7 @@ const Home = () => {
                                 >
                                     About
                                 </button>
-                                <div className='h-1 w-[50px] bg-vs-pink self-end'></div>
+                                <div className='h-[3px] w-[50px] bg-vs-pink self-end'></div>
                             </div>
                         </Link>
                     </div>

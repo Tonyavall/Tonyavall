@@ -34,13 +34,15 @@ const techStack = {
         { name: "ChakraUI", ReactIcon: null }
     ],
     backend: [
-        { name: "Nosql", ReactIcon: null },
+        { name: "NoSQL", ReactIcon: null },
         { name: "MongoDB", ReactIcon: SiMongodb },
         { name: "Mongoose", ReactIcon: null },
-        { name: "Mysql2", ReactIcon: SiMysql },
+        { name: "MySQL", ReactIcon: SiMysql },
         { name: "Sequelize", ReactIcon: SiSequelize },
         { name: "Nodejs", ReactIcon: DiNodejs },
         { name: "AWS S3", ReactIcon: null },
+        { name: "Apollo GraphQL", ReactIcon: null },
+        { name: "Express/REST APIs", ReactIcon: null },
     ],
     devTools: [
         { name: "Slack", ReactIcon: AiFillSlackCircle },

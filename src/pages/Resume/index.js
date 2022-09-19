@@ -74,7 +74,7 @@ const ResumePage = () => {
                     </div>
 
                     <p className=''>
-                        I'm a full stack web developer 
+                        I'm a full stack web developer with 
                     </p>
                 </div>
 
