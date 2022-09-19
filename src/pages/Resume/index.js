@@ -6,14 +6,22 @@ import { AiFillGithub } from 'react-icons/ai'
 import { FiExternalLink } from 'react-icons/fi'
 
 const ResumePage = () => {
-    const projects = collaborations.concat(works)
+    const projects = collaborations
+        .concat(works)
+        .sort((a,b) => {
+            if (!a.rank || !b.rank) return 1
+            if (a.rank < b.rank) {
+                return -1
+            }
+            return 1
+        })
 
     return (
         <div
-            className="flex flex-row min-w-[55vw] h-screen bg-white text-black flex-wrap font-sans justify-center md:justify-left "
+            className="flex flex-row min-w-[55vw] h-screen bg-white text-black flex-wrap font-sans justify-center md:justify-left"
         >
             <div
-                className="flex flex-col justify-center h-[250px] w-[350px]"
+                className="flex flex-col items-center lg:items-start justify-center h-[250px] w-[350px]"
             >
                 <div className="flex flex-row justify-center items-center mb-2 w-fit">
                     <div className='bg-[url("../public/assets/images/selfie.jpg")] w-14 h-14 bg-no-repeat bg-contain bg-center rounded-full border-[2.5px] border-[#1F2937] border-b-vs-pink border-l-vs-pink mr-4'/>
@@ -22,10 +30,10 @@ const ResumePage = () => {
                     </h1>
                 </div>
 
-                <div className="pl-1">
+                <div className="flex flex-col pl-1 items-center lg:items-start">
                     <p className="text-md">Web Developer</p>
                     <p className="text-sm">tonyavallescas@gmail.com</p>
-                    <p className="text-sm">Elk Grove, Sacramento, Remote</p>
+                    <p className="text-sm">Elk Grove, Sacramento, Remote/Local</p>
                     <p className="text-sm">California, CA</p>
                 </div>
 
@@ -56,7 +64,7 @@ const ResumePage = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col flex-wrap max-w-[800px] px-6 pt-12">
+            <div className="flex flex-col flex-wrap max-w-[800px] px-6 py-12">
                 <div className='flex flex-col mb-3'>
                     <div className='mb-3'>
                         <div className='flex justify-left items-center h-[35px] w-[100px] bg-vs-dblue'>
@@ -66,11 +74,11 @@ const ResumePage = () => {
                     </div>
 
                     <p className=''>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum tempus egestas sed sed risus pretium quam vulputate. Id semper risus in hendrerit gravida rutrum quisque. Cursus in hac habitasse platea dictumst quisque sagittis purus. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Eget velit aliquet sagittis id consectetur purus ut. Elementum pulvinar etiam non quam lacus suspendisse faucibus. Non pulvinar neque laoreet suspendisse interdum consectetur libero id. Turpis cursus in hac habitasse platea dictumst. Tristique risus nec feugiat in fermentum posuere urna nec tincidunt. Consequat semper viverra nam libero. Neque aliquam vestibulum morbi blandit. A diam maecenas sed enim ut sem viverra. In metus vulputate eu scelerisque felis imperdiet proin fermentum leo.
+                        I'm a full stack web developer 
                     </p>
                 </div>
 
-                <div className='flex flex-col mb-3'>
+                <div className='flex flex-col mb-3 pt-6'>
                     <div className='mb-3'>
                         <div className='flex justify-left items-center h-[35px] w-[100px] bg-vs-dblue'>
                             <h2 className='ml-2 text-white font-lg'>Projects</h2>
@@ -104,6 +112,56 @@ const ResumePage = () => {
                         ))}
                     </div>
                 </div>
+
+                <div className="flex flex-col flex-wrap max-w-[800px] pt-6">
+                    <div className='flex flex-col mb-3'>
+                        <div className='mb-3'>
+                            <div className='flex justify-left items-center h-[35px] w-[100px] bg-vs-dblue'>
+                                <h2 className='ml-2 text-white font-lg'>Tech Stacks</h2>
+                            </div>
+                            <div className='h-1 w-[75px] bg-vs-pink self-end'></div>
+                        </div>
+
+                        <div className='flex flex-row justify-left items-center mb-1'>
+                            <p className='font-medium mr-2'>Frontend</p>
+                            <p className='font-light'>JavaScript, TypeScript, React, HTML, CSS, ChakraUI, Tailwind, Bootstrap</p>
+                        </div>
+                        <div className='flex flex-row justify-left items-center mb-1'>
+                            <p className='font-medium mr-2'>Backend</p>
+                            <p className='font-light'>Node, NoSQL, MongoDB/Mongoose, Apollo Graphql, MySQL, Sequelize, Handlebars, Expressjs </p>
+                        </div>
+                        <div className='flex flex-row justify-left items-center mb-1'>
+                            <p className='font-medium mr-2'>DevOps</p>
+                            <p className='font-light'>AWS S3</p>
+                        </div>
+                        <div className='flex flex-row justify-left items-center mb-1'>
+                            <p className='font-medium text-md mr-2'>Languages</p>
+                            <p className='font-light'>JavaScript, TypeScript, C++</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="flex flex-col flex-wrap max-w-[800px] pt-6">
+                    <div className='flex flex-col mb-3'>
+                        <div className='mb-3'>
+                            <div className='flex justify-left items-center h-[35px] w-[100px] bg-vs-dblue'>
+                                <h2 className='ml-2 text-white font-lg'>Education</h2>
+                            </div>
+                            <div className='h-1 w-[75px] bg-vs-pink self-end'></div>
+                        </div>
+
+                        <div className='flex flex-col justify-center items-left mb-2'>
+                            <p className='font-medium mr-2'>Coding Certificate, Full Stack Web Development, <span className='font-light'>University of California, Irvine</span></p>
+                            <p className='font-light text-sm'>March, 2022 - September, 2022</p>
+                        </div>
+
+                        <div className='flex flex-col justify-center items-left mb-2'>
+                            <p className='font-medium mr-2'>Computer Science, AS <span className='font-light'>Cosumnes River College</span></p>
+                            <p className='font-light text-sm'>2022 - Current</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     )

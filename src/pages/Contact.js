@@ -9,7 +9,7 @@ const Contact = () => {
             <div>
                 <h3 className='text-2xl text-vs-teal ml-4 mt-4'>Contact</h3>
                 <div className='flex flex-row flex-wrap justify-center items-center p-2 text-xl'>
-                    {socials.map(({link, name, icon, relative = false})=> {
+                    {socials.map(({link, name, icon, relative = false, email = false})=> {
                         return (
                             relative ? 
                             <Link
@@ -24,7 +24,7 @@ const Contact = () => {
                             </Link>
                             :
                             <a 
-                                href={link}
+                                href={email ? `mailto: ${link}` : link}
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 key={name}

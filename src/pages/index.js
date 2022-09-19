@@ -8,6 +8,7 @@ const Home = () => {
             <p className="text-center bg-[#1F2937] mx-4 mt-6 p-3">
                 Hi! I'm a web developer and compsci student in NorCal.
             </p>
+            
             <div className='h-1 min-w-[170px] w-[14vw] bg-vs-pink mb-6 mx-4'></div>
 
             <div className='flex flex-row justify-center sm:justify-between flex-wrap w-full px-5'>

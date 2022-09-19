@@ -11,7 +11,8 @@ const collaborations = [
     github: 'https://github.com/Tonyavall/OldEgg',
     stack: 'Nodejs, Expressjs, Handlebars, Sequelize (MySql2), AWS S3, ESLint, Heroku',
     platform: 'Web',
-    published: '2022'
+    published: '2022',
+    rank: 2,
   },
   {
     title: "What's Streamin'",
@@ -24,7 +25,8 @@ const collaborations = [
     github: 'https://github.com/Tonyavall/Stream_Availability',
     stack: 'HTML, CSS (Bootstrap, CSS.GG), JavaScript',
     platform: 'Web',
-    published: '2022'
+    published: '2022',
+    rank: 3
   },
 ]
 

@@ -2,15 +2,16 @@ const works = [
     {
         title: 'Fitter',
         type: 'Works',
-        description: 'An instagram clone with a twist!',
+        description: 'A social media site to post your fits! Made with SSR, AWS, Graphql/MongoDB, and TypeScript.',
         narrative: 'Narrative here.',
         cover: 'https://fitterapp.s3.us-west-1.amazonaws.com/fitter-logo.png',
         images: [],
         website: 'https://fitterapp.vercel.app/',
         github: 'https://github.com/Tonyavall/Fitterapp',
-        stack: 'NEXTJs, TypeScript, AWS S3, Apollo Client/Server, NoSQL/Mongoose, ChakraUI',
+        stack: 'NEXTJs, React, TypeScript, AWS S3, Apollo Client/Server, NoSQL/MongoDB/Mongoose, ChakraUI',
         platform: 'Web',
-        published: '2022'
+        published: '2022',
+        rank: 1
     },
     {
         title: 'TextEditor',
@@ -41,7 +42,7 @@ const works = [
     {
         title: 'LNET',
         type: 'Works',
-        description: 'Got something to say? Blog about it using LNET.',
+        description: 'A CMS style blog web app utilizing the MVC framework with Handlebars, MySQL, and Express',
         narrative: 'A CMS-style blog web app using Sequelize, Express, Handlebars, and Tailwind. User authentication is handled through express middleware and Bcrypt, with some business logic authentication as well as frontend error handling. Database language used is Mysql2 for Sequelize and its respective models can be found in /models.',
         cover: '/assets/images/lnet.png',
         images: [],
@@ -54,7 +55,7 @@ const works = [
     {
         title: 'Ecommerce API',
         type: 'Works',
-        description: 'Store data with sequelize!',
+        description: 'An ecommerce backend with MySQL utilizing an Object Relational Mapper (ORM)- Sequelize.',
         narrative: 'Ecommerce related data such as items and their respective price, stock, name, category, and tag are stored in the backend using sequelize- an object relational mapper (ORM) for mysql2.',
         cover: '/assets/images/eCommBackend.png',
         images: [],
@@ -67,7 +68,7 @@ const works = [
     {
         title: 'Employee Tracker',
         type: 'Works',
-        description: 'Track your employees, roles, and departments with mysql2!',
+        description: 'An employee tracker with MySQL, Node, and Inquirer.',
         narrative: 'A mysql2 based CLI employee tracker made with NodeJs. Upon initialization, the user is prompted with a menu of questions pertaining to a mysql2 database- questions such as listing, adding, and deleting roles, etc. Query methods such as SELECT, DELETE, INSERT, and JOINS were used to achieve its functionaltiy as well as the most recent ES6 JavaScript syntax for asynchronous code- async/await, try/catch.',
         cover: '/assets/images/employeeTracker.png',
         images: [],
@@ -80,7 +81,7 @@ const works = [
     {
         title: 'Express Note Taker',
         type: 'Works',
-        description: "Take notes with express! A relatively simple 'database' notetaking app.",
+        description: "A note taking app that encompasses REST API CRUD routes with Node and the Express framework.",
         narrative: 'A notetaking app that uses a pseudo database file (json) that stores user notes. Based on the express framework, api and html routes were connected through a series of get, post, and delete methods. ',
         cover: '/assets/images/expressNoteTaker.png',
         images: [],
@@ -93,7 +94,7 @@ const works = [
     {
         title: 'Team Profile Generator',
         type: 'Works',
-        description: 'A simple web app that gathers user input and generates a team members page.',
+        description: 'Utilizes node and npm Inquirer to gather user input and generate an html page.',
         narrative: 'An Html5 generator based on user input gathered from npm Inquirer questions. Class objects were created and their functionality were tested through a series of Jest tests.',
         cover: '/assets/images/profileGen.png',
         images: [],
@@ -119,7 +120,7 @@ const works = [
     {
         title: 'Weather Dashboard',
         type: 'Works',
-        description: 'Track the weather from anywhere in the world.',
+        description: 'A weather dashboard web app that utilizes web APIs to gather weather data.',
         narrative: 'Geocoding and Weather APIs work in tandem, respectively, to: a. Grab user city string and fetch API data, returning latitudes(lat) and longitudes(lon) of the city b. Returned lats and lons are then used to fetch WeatherAPI data.',
         cover: '/assets/images/weatherApp.jpg',
         images: [],
