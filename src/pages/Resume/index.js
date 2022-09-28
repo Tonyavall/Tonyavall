@@ -74,7 +74,11 @@ const ResumePage = () => {
                     </div>
 
                     <p className=''>
-                        I'm a full stack web developer with 
+                        I'm a full stack web developer with substantial knowledge in the MERN stack- React, NoSQL/SQL databases, Express, and Node.
+                        As well as the fundamentals- HTML, CSS, and JavaScript. Lately, I have been working with serverside rendering with NEXTJS,
+                        Graphql with Apollo, and TypeScript, however, I'm looking to learn other web development stacks with PHP, Vue, or Angular. As a current
+                        computer science student, I'm looking to grow and learn not just to better my overall code quality and apply best practices, but
+                        also to ensure that my programs are intuitive and have a meaningful purpose for users.
                     </p>
                 </div>
 
