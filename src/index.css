@@ -725,8 +725,8 @@ video {
   height: 24rem;
 }
 
-.h-1 {
-  height: 0.25rem;
+.h-\[3px\] {
+  height: 3px;
 }
 
 .h-32 {
@@ -745,6 +745,10 @@ video {
   height: 35px;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
 .h-\[175px\] {
   height: 175px;
 }
@@ -755,18 +759,6 @@ video {
 
 .h-\[24px\] {
   height: 24px;
-}
-
-.h-\[1px\] {
-  height: 1px;
-}
-
-.h-\[2px\] {
-  height: 2px;
-}
-
-.h-\[3px\] {
-  height: 3px;
 }
 
 .min-h-screen {
@@ -813,8 +805,8 @@ video {
   width: 375px;
 }
 
-.w-\[350px\] {
-  width: 350px;
+.w-\[90vw\] {
+  width: 90vw;
 }
 
 .w-fit {
@@ -851,8 +843,16 @@ video {
   max-width: 32rem;
 }
 
+.max-w-\[350px\] {
+  max-width: 350px;
+}
+
 .max-w-\[800px\] {
   max-width: 800px;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .origin-top-right {
@@ -954,20 +954,16 @@ video {
   border-width: 2px;
 }
 
-.border {
-  border-width: 1px;
-}
-
-.border-\[5px\] {
-  border-width: 5px;
+.border-\[3px\] {
+  border-width: 3px;
 }
 
 .border-\[2\.5px\] {
   border-width: 2.5px;
 }
 
-.border-\[3px\] {
-  border-width: 3px;
+.border {
+  border-width: 1px;
 }
 
 .border-\[\#1F2937\] {
@@ -1044,12 +1040,12 @@ video {
   fill: #2563eb;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
 .p-4 {
   padding: 1rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-3 {
@@ -1071,14 +1067,19 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-6 {
@@ -1096,24 +1097,24 @@ video {
   padding-right: 0.5rem;
 }
 
-.pl-1 {
-  padding-left: 0.25rem;
-}
-
-.pt-6 {
-  padding-top: 1.5rem;
-}
-
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .pb-4 {
   padding-bottom: 1rem;
 }
 
-.pb-2 {
-  padding-bottom: 0.5rem;
+.pl-1 {
+  padding-left: 0.25rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-left {
@@ -1126,6 +1127,10 @@ video {
 
 .indent-6 {
   text-indent: 1.5rem;
+}
+
+.indent-10 {
+  text-indent: 2.5rem;
 }
 
 .font-mono {
@@ -1409,18 +1414,6 @@ video {
 
   .md\:w-56 {
     width: 14rem;
-  }
-
-  .md\:items-start {
-    align-items: flex-start;
-  }
-
-  .md\:items-center {
-    align-items: center;
-  }
-
-  .md\:justify-start {
-    justify-content: flex-start;
   }
 }
 

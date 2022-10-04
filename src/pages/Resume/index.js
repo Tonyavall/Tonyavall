@@ -5,23 +5,24 @@ import works from '../../lib/works'
 import { AiFillGithub } from 'react-icons/ai'
 import { FiExternalLink } from 'react-icons/fi'
 
+export const projects = collaborations
+    .concat(works)
+    .sort((a,b) => {
+        if (!a.rank || !b.rank) return 1
+        if (a.rank < b.rank) {
+            return -1
+        }
+        return 1
+    })
+
 const ResumePage = () => {
-    const projects = collaborations
-        .concat(works)
-        .sort((a,b) => {
-            if (!a.rank || !b.rank) return 1
-            if (a.rank < b.rank) {
-                return -1
-            }
-            return 1
-        })
 
     return (
         <div
-            className="flex flex-row min-w-[55vw] h-screen bg-white text-black flex-wrap font-sans justify-center md:justify-left"
+            className="flex flex-row  min-w-[55vw] px-10 h-screen bg-white text-black flex-wrap font-sans justify-center md:justify-left"
         >
             <div
-                className="flex flex-col items-center lg:items-start justify-center h-[250px] w-[350px]"
+                className="flex flex-col items-center lg:items-start justify-center h-[250px] max-w-[350px] w-full w-[90vw]"
             >
                 <div className="flex flex-row justify-center items-center mb-2 w-fit">
                     <div className='bg-[url("../public/assets/images/selfie.jpg")] w-14 h-14 bg-no-repeat bg-contain bg-center rounded-full border-[2.5px] border-[#1F2937] border-b-vs-pink border-l-vs-pink mr-4'/>
@@ -73,12 +74,15 @@ const ResumePage = () => {
                         <div className='h-1 w-[75px] bg-vs-pink self-end'></div>
                     </div>
 
-                    <p className=''>
+                    <p className='indent-10 mb-2'>
                         I'm a full stack web developer with substantial knowledge in the MERN stack- React, NoSQL/SQL databases, Express, and Node.
                         As well as the fundamentals- HTML, CSS, and JavaScript. Lately, I have been working with serverside rendering with NEXTJS,
-                        Graphql with Apollo, and TypeScript, however, I'm looking to learn other web development stacks with PHP, Vue, or Angular. As a current
-                        computer science student, I'm looking to grow and learn not just to better my overall code quality and apply best practices, but
-                        also to ensure that my programs are intuitive and have a meaningful purpose for users.
+                        Graphql with Apollo, and TypeScript, however, I'm looking to learn other web development stacks with PHP, Vue, or Angular.
+                    </p>
+                    <p className='indent-10'>
+                        As a current computer science student, I'm looking to grow and learn not just to better my overall code quality and apply best practices, but
+                        also to ensure that my programs are (1) intuitive and have a meaningful purpose for users, (2) performant with regards to maintainability, and
+                        (3) as scalable as my current skillset allows it to be. I love everything computers, and am open to learn and experience new tech.
                     </p>
                 </div>
 
@@ -92,7 +96,7 @@ const ResumePage = () => {
 
                     <div className='flex flex-wrap justify-between items-center w-full'>
                         {projects?.map(({title, description, website, github}) => (
-                            <div className='flex flex-col w-[350px] mb-4'>
+                            <div className='flex flex-col max-w-[350px] w-full w-[90vw] mb-4'>
                                 <div className='flex flex-row justify-left items-center'>
                                     <h3 className='mr-2 font-medium'>{title}</h3>
                                     <a 
@@ -160,7 +164,7 @@ const ResumePage = () => {
                         </div>
 
                         <div className='flex flex-col justify-center items-left mb-2'>
-                            <p className='font-medium mr-2'>Computer Science, AS <span className='font-light'>Cosumnes River College</span></p>
+                            <p className='font-medium mr-2'>Computer Science, AS <span className='font-light'>Cosumnes River College, Sacramento</span></p>
                             <p className='font-light text-sm'>2022 - Current</p>
                         </div>
                     </div>
