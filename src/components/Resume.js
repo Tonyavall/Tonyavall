@@ -66,14 +66,15 @@ const styles = StyleSheet.create({
     headerBox: {
         color: 'white',
         backgroundColor: '#1F2937',
-        width: '64pt',
+        width: '76pt',
         height: '26.25pt',
         fontSize: '12pt',
         padding: '4pt',
         marginBottom: '8pt',
         display: 'flex',
         flexDirection: 'row',
-        alignItems: 'center'
+        alignItems: 'center',
+        marginVertical: '8pt'
     },
     sections: {
         marginTop: '14pt',
@@ -82,17 +83,35 @@ const styles = StyleSheet.create({
         fontSize: '11pt',
         textIndent: '20pt',
         marginBottom: '8pt',
-        lineHeight: '1.5pt',
+        lineHeight: '1.75pt',
         fontStyle: 'light'
     },
     project: {
         display: 'flex',
         flexDirection: 'column',
-        marginVertical: '4pt'
+        marginVertical: '5pt'
     },
     projectDescription: {
         fontSize: '11pt',
-        color: 'gray'
+        color: '#525659',
+    },
+    techStack: {
+        display: 'inline-block',
+        fontSize: '11pt',
+        marginVertical: '5pt',
+    },
+    techStackList: {
+        fontSize: '11pt',
+        color: '#525659'
+    },
+    education: {
+        fontSize: '11pt',
+        marginTop: '5pt'
+    },
+    educationDescription: {
+        fontSize: '11pt',
+        color: '#525659',
+        marginBottom: '5pt'
     }
 });
 
@@ -152,18 +171,21 @@ const Resume = () => {
                 </View>
 
                 <View style={styles.sections}>
+
+                    {/* ABOUT */}
                     <View style={styles.headerBox}>
                         <Text>About</Text>
                     </View>
 
                     <Text style={styles.sectionsText}>
-                        I'm a full stack web developer with substantial knowledge in the MERN stack- React, NoSQL/SQL databases, Express, and Node. As well as the fundamentals- HTML, CSS, and JavaScript. Lately, I have been working with serverside rendering with NEXTJS, Graphql with Apollo, and TypeScript, however, I'm looking to learn other web development stacks with PHP, Vue, or Angular.
+                        I'm a full stack web developer with substantial knowledge in the MERN stack- React, NoSQL/SQL databases, Express, and Node. As well as the fundamentals- HTML, CSS, and JavaScript. Lately, I've been working with serverside rendering with NEXTJS, Graphql with Apollo, and TypeScript, however, I'm looking to learn other web development stacks with PHP, Vue, or Angular.
                     </Text>
 
                     <Text style={styles.sectionsText}>
                         As a current computer science student, I'm looking to grow and learn not just to better my overall code quality and apply best practices, but also to ensure that my programs are (1) intuitive and have a meaningful purpose for users, (2) performant with regards to maintainability, and (3) as scalable as my current skillset allows it to be. I love everything computers, and am open to learn and experience new tech.
                     </Text>
 
+                    {/* PROJECTS */}
                     <View style={styles.headerBox}>
                         <Text>Projects</Text>
                     </View>
@@ -198,6 +220,61 @@ const Resume = () => {
                             </View>
                         ))
                     }
+
+                    {/* TECH STACK */}
+                    <View style={styles.headerBox}>
+                        <Text>Tech Stack</Text>
+                    </View>
+
+                    <View style={styles.techStack}>
+                        <Text>Frontend</Text>
+
+                        <Text style={styles.techStackList}>
+                            JavaScript, TypeScript, React, HTML, CSS, ChakraUI, Tailwind, Bootstrap
+                        </Text>
+                    </View>
+
+                    <View style={styles.techStack}>
+                        <Text>Backend</Text>
+
+                        <Text style={styles.techStackList}>
+                            Node, NoSQL, MongoDB/Mongoose, Apollo Graphql, MySQL, Sequelize, Handlebars, Expressjs
+                        </Text>
+                    </View>
+
+                    <View style={styles.techStack}>
+                        <Text>DevOps</Text>
+
+                        <Text style={styles.techStackList}>
+                            AWS S3
+                        </Text>
+                    </View>
+                    
+                    <View style={styles.techStack}>
+                        <Text>Languages</Text>
+
+                        <Text style={styles.techStackList}>
+                            JavaScript, TypeScript, C++
+                        </Text>
+                    </View>
+
+                    {/* EDUCATION */}
+                    <View style={styles.headerBox}>
+                        <Text>Education</Text>
+                    </View>
+
+                    <Text style={styles.education}>Coding Certificate, Full Stack Web Development, <Text style={styles.educationDescription}>University of California, Irvine</Text></Text>
+                    <Text style={styles.educationDescription}>March 2022 - September 2022</Text>
+
+                    <Text style={styles.education}>Computer Science, AS <Text style={styles.educationDescription}>Cosumnes River College, Sacramento</Text></Text>
+                    <Text style={styles.educationDescription}>2022 - Current, 3.7</Text>
+
+                    <Text style={styles.education}>Biology: Prenursing, AS <Text style={styles.educationDescription}>Cosumnes River College, Sacramento</Text></Text>
+                    <Text style={styles.educationDescription}>2019 - 2021, 3.9</Text>
+
+                    <Text style={styles.education}>Elk Grove Highschool <Text style={styles.educationDescription}>Elk Grove, Sacramento</Text></Text>
+                    <Text style={styles.educationDescription}>2015 - 2019, 4.1 Weighted</Text>
+
                 </View>
             </Page>
         </Document>
