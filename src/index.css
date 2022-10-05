@@ -962,10 +962,6 @@ video {
   border-width: 2.5px;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .border-\[\#1F2937\] {
   --tw-border-opacity: 1;
   border-color: rgb(31 41 55 / var(--tw-border-opacity));

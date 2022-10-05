@@ -5,7 +5,7 @@ import { BsPersonCircle } from 'react-icons/bs'
 import { Svg, Path } from '@react-pdf/renderer';
 
 // converts react icon svg to react pdf svg
-export const convertSvgToPdf = (svgFunction) => {
+export const convertSvgToPdf = (svgFunction, props = null) => {
     const { attr, children } = svgFunction().props
 
     return (
@@ -13,6 +13,7 @@ export const convertSvgToPdf = (svgFunction) => {
             width="13" height="13"
             viewBox={attr.viewBox}
             key={Math.random() * (1000 - 1) + 1}
+            {...props}
         >
             {
                 children?.map(({props}) => (

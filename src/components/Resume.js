@@ -1,16 +1,18 @@
 import { Document, Page, Text, View, StyleSheet, Image, Font, Link } from '@react-pdf/renderer';
-import Cambria from './Cambria.ttf'
+import sfuiBold from '../lib/fonts/sfuiBold.ttf'
+import sfuiRegular from '../lib/fonts/sfuiRegular.ttf'
+import sfuiLight from '../lib/fonts/sfuiLight.ttf'
 import { useEffect } from 'react';
 import socials from '../lib/socials';
 import { projects } from '../pages/Resume';
 import { AiFillGithub } from 'react-icons/ai'
-import { FiExternalLink } from 'react-icons/fi'
+import { CgWebsite } from 'react-icons/cg'
 import { convertSvgToPdf } from '../lib/socials';
 
 const styles = StyleSheet.create({
     page: {
         backgroundColor: 'white',
-        fontFamily: 'Cambria',
+        fontFamily: 'SFUI',
         width: '100vw',
         height: '100vh',
         display: 'flex',
@@ -31,22 +33,24 @@ const styles = StyleSheet.create({
         borderRadius: '100%',
         width: '40px',
         height: '40px',
+        marginBottom: '4pt'
     },
     name: {
-        fontSize: '18pt',
-        marginBottom: '8pt'
+        fontSize: '16pt',
+        marginBottom: '8pt',
+        fontStyle: 'bold',
     },
     title: {
-        fontSize: '12pt',
+        fontSize: '11pt',
         marginBottom: '2pt'
     },
     email: {
-        fontSize: '11pt',
+        fontSize: '10pt',
         marginBottom: '2pt',
         textDecoration: 'underline'
     },
     location: {
-        fontSize: '11pt',
+        fontSize: '10pt',
         marginBottom: '2pt'
     },
     socials: {
@@ -63,32 +67,45 @@ const styles = StyleSheet.create({
         color: 'white',
         backgroundColor: '#1F2937',
         width: '64pt',
-        height: '24pt',
-        fontSize: '13pt',
+        height: '26.25pt',
+        fontSize: '12pt',
         padding: '4pt',
-        marginBottom: '8pt'
+        marginBottom: '8pt',
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center'
     },
     sections: {
-        marginTop: '20pt',
+        marginTop: '14pt',
     },
     sectionsText: {
         fontSize: '11pt',
-        textIndent: '15pt',
+        textIndent: '20pt',
         marginBottom: '8pt',
-        lineHeight: '2pt'
+        lineHeight: '1.5pt',
+        fontStyle: 'light'
     },
     project: {
         display: 'flex',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        marginVertical: '4pt'
+    },
+    projectDescription: {
+        fontSize: '11pt',
+        color: 'gray'
     }
 });
 
 const Resume = () => {
     const registerFont = () => {
         Font.register({
-            family: 'Cambria',
+            family: 'SFUI',
             format: "truetype",
-            src: Cambria,
+            fonts: [
+                { src: sfuiRegular },
+                { src: sfuiBold, fontStyle: 'bold' },
+                { src: sfuiLight, fontStyle: 'light' }
+            ]
         })
     }
 
@@ -109,7 +126,7 @@ const Resume = () => {
                         style={styles.avatar}
                     />
                     <Text Font="normal" style={styles.name}>Tony Vallescas</Text>
-                    <Text style={styles.title}>Full Stack Web Developer</Text>
+                    <Text style={styles.title}>Web Software Developer</Text>
                     <Text href="mailto:tonyavallescas@gmail.com" style={styles.email}>tonyavallescas@gmail.com</Text>
                     <Text style={styles.location}>Elk Grove, Sacramento, Remote/Local</Text>
                     <Text style={styles.location}>California, USA</Text>
@@ -155,25 +172,27 @@ const Resume = () => {
                         projects?.map(({title, description, website, github}) => (
                             <View style={styles.project}>
                                 <View style={{flexDirection: 'row'}}>
-                                    <Text>
+                                    <Text style={styles.title}>
                                         {title}
                                     </Text>
                                     <Link
-                                        href={website}
+                                        style={styles.socials}
+                                        href={github}
                                         target="_blank" 
                                         rel="noopener noreferrer"
                                     >
-                                        {convertSvgToPdf(AiFillGithub)}
+                                        {convertSvgToPdf(AiFillGithub, { style: { marginHorizontal: '3pt' } })}
                                     </Link>
                                     <Link
+                                        style={styles.socials}
                                         href={website}
                                         target="_blank" 
                                         rel="noopener noreferrer"
                                     >
-                                        {convertSvgToPdf(FiExternalLink)}
+                                        {convertSvgToPdf(CgWebsite, { style: { marginHorizontal: '3pt' } })}
                                     </Link>
                                 </View>
-                                <Text>
+                                <Text style={styles.projectDescription}>
                                     {description}
                                 </Text>
                             </View>

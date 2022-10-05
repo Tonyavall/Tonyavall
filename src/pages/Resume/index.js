@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import collaborations from '../../lib/collaborations'
 import works from '../../lib/works'
 import { AiFillGithub } from 'react-icons/ai'
-import { FiExternalLink } from 'react-icons/fi'
+import { CgWebsite } from 'react-icons/cg'
 
 export const projects = collaborations
     .concat(works)
@@ -96,7 +96,9 @@ const ResumePage = () => {
 
                     <div className='flex flex-wrap justify-between items-center w-full'>
                         {projects?.map(({title, description, website, github}) => (
-                            <div className='flex flex-col max-w-[350px] w-full w-[90vw] mb-4'>
+                            <div 
+                                key={title}
+                                className='flex flex-col max-w-[350px] w-full w-[90vw] mb-4'>
                                 <div className='flex flex-row justify-left items-center'>
                                     <h3 className='mr-2 font-medium'>{title}</h3>
                                     <a 
@@ -111,7 +113,7 @@ const ResumePage = () => {
                                         rel="noopener noreferrer"
                                         href={website}
                                     >
-                                        <FiExternalLink  className='text-[1.1rem] hover:text-vs-pink text-vs-dblue'/>
+                                        <CgWebsite  className='text-[1.1rem] hover:text-vs-pink text-vs-dblue'/>
                                     </a>
                                 </div>
 
