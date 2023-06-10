@@ -2,6 +2,7 @@
   "name": "tonyavall",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://tonyavall.github.io",
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
@@ -34,7 +35,6 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "homepage": "https://tonyavall.github.io"
   },
   "eslintConfig": {
     "extends": [
