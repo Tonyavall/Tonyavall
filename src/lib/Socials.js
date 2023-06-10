@@ -53,13 +53,13 @@ const socials = [
         email: true,
         icon: <SiGmail/>,
         IconPdf: convertSvgToPdf(SiGmail)
-    },
-    {
-        name: 'Resume',
-        link: "/contact/resume",
-        icon: <AiOutlineFilePdf/>,
-        relative: true
     }
+    // {
+    //     name: 'Resume',
+    //     link: "/contact/resume",
+    //     icon: <AiOutlineFilePdf/>,
+    //     relative: true
+    // }
 ]
 
 export default socials
