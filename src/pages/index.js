@@ -14,7 +14,7 @@ const Home = () => {
             <div className='flex flex-row justify-center sm:justify-between flex-wrap w-full px-5'>
                 <div className='flex flex-col my-6'>
                 <h2 className='text-4xl font-bold'>Tony Vallescas</h2>
-                <p className='italic'>Web Software Developer</p>
+                <p className='italic'>Web Developer</p>
                 </div>
                 <div className='bg-[url("../public/assets/images/selfie.jpg")] w-32 h-32 bg-no-repeat bg-contain bg-center rounded-full border-[3px] border-[#1F2937] border-b-vs-pink border-l-vs-pink'></div>
             </div>
