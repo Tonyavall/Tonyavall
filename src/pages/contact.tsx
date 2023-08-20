@@ -1,4 +1,4 @@
-import Layout from '../components/layouts/Article'
+import Layout from '../components/layouts/article'
 import socials from '../lib/socials'
 import { Link } from 'react-router-dom'
 
@@ -9,7 +9,7 @@ const Contact = () => {
             <div>
                 <h3 className='text-2xl text-vs-teal ml-4 mt-4'>Contact</h3>
                 <div className='flex flex-row flex-wrap justify-center items-center p-2 text-xl'>
-                    {socials.map(({link, name, icon, relative = false, email = false})=> {
+                    {socials.map(({link, name, icon, relative = false, email = false}: any)=> {
                         if (name === "Portfolio") return null;
                         return (
                             relative ? 

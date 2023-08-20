@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 
-const Tavatar = (props) => {
+const Tavatar = (props: any) => {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/Tavatar.glb')
   const { actions } = useAnimations(animations, group)

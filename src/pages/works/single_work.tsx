@@ -1,15 +1,15 @@
-import Layout from '../../components/layouts/Article'
-import works from '../../lib/works';
-import collaborations from '../../lib/collaborations';
+import Layout from '../../components/layouts/article'
+import works from '../../lib/works.json';
+import collaborations from '../../lib/collaborations.json';
 import { useParams, Link } from 'react-router-dom';
-import Error from '../Error'
+// import Error from '../error'
 
 const SingleWork = () => {
     const { work } = useParams()
     const currentProject = works.concat(collaborations)
         .find(project => project.title === work)
 
-    if (!currentProject) return <Error/>
+    // if (!currentProject) return <Error/>
 
     return (
         <Layout title={currentProject?.title}>

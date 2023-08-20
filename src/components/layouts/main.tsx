@@ -1,9 +1,12 @@
-import { Helmet } from 'react-helmet'
-import Navbar from '../Navbar';
-import Tavatar from '../ModelCanvas'
+import Navbar from '../navbar';
+import Tavatar from '../model_canvas'
 import { useLocation } from 'react-router-dom';
 
-const Main = ({ children }) => {
+interface Props {
+    children: React.ReactNode | React.ReactNode[]
+}
+
+const Main: React.FC<Props> = ({ children }) => {
     const { pathname } = useLocation()
     const noFormatRoutes = [
         '/contact/resume',
@@ -20,11 +23,11 @@ const Main = ({ children }) => {
 
     return (
         <main className={`flex flex-col items-center ${isNoFormatRoute() ? 'bg-white' : 'bg-vs-bg'} min-h-screen h-fill text-white font-mono`}>
-            <Helmet>
+            <head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="Portfolio" content="Tony Vallescas' porfolio website."/>
                 <title>Tony Vallescas - Homepage</title>
-            </Helmet>
+            </head>
 
             {!isNoFormatRoute() && <Navbar/>}
             {!isNoFormatRoute() && <Tavatar/>}

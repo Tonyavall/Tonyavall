@@ -1,5 +1,5 @@
-import Layout from '../components/layouts/Article'
-import techStack from '../lib/techStack'
+import Layout from '../components/layouts/article'
+import techStack from '../lib/tech_stack'
 import { Link } from 'react-router-dom'
 
 const About = () => {

@@ -1,9 +1,10 @@
-import Layout from '../../components/layouts/Article'
-import works from "../../lib/works"
-import collaborations from "../../lib/collaborations"
+import Layout from '../../components/layouts/article'
+import works from "../../lib/works.json"
+import collaborations from "../../lib/collaborations.json"
 import { Link } from 'react-router-dom'
+import { FC } from 'react'
 
-const Works = () => {
+const Works: FC = () => {
     return (
         <Layout title="Works">
             <h4 className='text-2xl text-vs-teal ml-4 mt-4'>Collaborations</h4>

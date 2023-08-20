@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom"
-import Burger from "./Burger"
+import Burger from "./burger"
 
 const Navbar = () => {
     const { pathname } = useLocation()

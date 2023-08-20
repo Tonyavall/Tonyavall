@@ -3,11 +3,18 @@ import { Menu, Transition } from '@headlessui/react'
 import { FaHamburger } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
-function classNames(...classes) {
+function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ')
 }
 
-const Burger = ({currentLocation, pages}) => {
+type Page = { name: string }
+
+interface Props {
+    currentLocation: string;
+    pages: Page[]
+}
+
+const Burger: React.FC<Props> = ({ currentLocation, pages }) => {
     
   return (
     <Menu as="div" className="relative inline-block text-left md:hidden">
@@ -28,7 +35,7 @@ const Burger = ({currentLocation, pages}) => {
         >
             <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-[#1F2937] shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                 <div className="py-1">
-                    {pages.map(({name}) => (
+                    {pages.map(({ name }: { name: string }) => (
                         <Menu.Item key={name}>
                             <Link to={`/${name}`}>
                                 <button

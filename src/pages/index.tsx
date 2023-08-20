@@ -1,4 +1,4 @@
-import Layout from '../components/layouts/Article'
+import Layout from '../components/layouts/article'
 import { Link } from 'react-router-dom';
 
 const Home = () => {
