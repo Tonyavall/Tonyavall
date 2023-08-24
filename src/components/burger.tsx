@@ -2,10 +2,7 @@ import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { FaHamburger } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-
-function classNames(...classes: any) {
-  return classes.filter(Boolean).join(' ')
-}
+import { classNames } from '../lib/utility_fns'
 
 type Page = { name: string }
 

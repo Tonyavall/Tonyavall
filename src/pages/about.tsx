@@ -2,7 +2,7 @@ import Layout from '../components/layouts/article'
 import techStack from '../lib/tech_stack'
 import { Link } from 'react-router-dom'
 
-const About = () => {
+const About: React.FC = () => {
 
     return (
         <Layout title="About">

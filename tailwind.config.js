@@ -12,6 +12,9 @@ module.exports = {
         'vs-purple': '#BF9EEE',
         'vs-bg': '#282A36',
         'vs-dblue': '#1F2937'
+      },
+      backgroundImage: {
+        'selfie': "url('../public/images/selfie.jpg')"
       }
     },
   },

@@ -7,7 +7,7 @@ const Navbar = () => {
 
     const pages = [
         { name: 'works' },
-        { name: 'about' },
+        // { name: 'about' },
         { name: 'contact' },
     ]
 
@@ -17,7 +17,7 @@ const Navbar = () => {
                 <h1 className="md:flex mx-2 text-vs-pink font-extrabold text-xl content-center hover:cursor-pointer hidden">
                     tonyavall
                 </h1>
-                <div className='md:hidden bg-[url("../public/assets/images/selfie.jpg")] w-[2.5rem] h-[2.5rem] bg-no-repeat bg-contain bg-center rounded-full border-[2px] border-[#1F2937] border-b-vs-pink border-l-vs-pink'></div>
+                <div className='md:hidden bg-selfie w-[2.5rem] h-[2.5rem] bg-no-repeat bg-contain bg-center rounded-full border-[2px] border-[#1F2937] border-b-vs-pink border-l-vs-pink'></div>
             </Link>
             <div className="md:flex justify-center items-center flex-wrap hidden h-full">
             {

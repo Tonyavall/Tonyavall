@@ -1,5 +1,5 @@
 import { BsGithub } from 'react-icons/bs'
-import { AiFillLinkedin, AiOutlineFilePdf } from 'react-icons/ai'
+import { AiFillLinkedin } from 'react-icons/ai'
 import { SiGmail } from 'react-icons/si'
 import { BsPersonCircle } from 'react-icons/bs'
 

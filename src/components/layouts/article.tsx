@@ -1,24 +1,31 @@
+import React, { useEffect, useState } from 'react';
+
 interface Props {
-    children?: React.ReactNode | React.ReactNode[]
-    title?: string
+    children?: React.ReactNode | React.ReactNode[];
+    title?: string;
 }
 
 const Main: React.FC<Props> = ({ children, title }) => {
-    const helmetTitle = `Tony Vallescas - ${title}`
+    const [opacity, setOpacity] = useState(0);
+
+    useEffect(() => {
+        // Fade-in effect when component mounts
+        setOpacity(1);
+
+        // Fade-out effect before component unmounts
+        return () => {
+            setOpacity(0);
+        };
+    }, []);
 
     return (
-        <>
-        {title && (
-                <head>
-                    <meta name="viewport" content="width=device-width, initial-scale=1" />
-                    <meta name="Portfolio" content={helmetTitle}/>
-                    <title>{helmetTitle}</title>
-                </head>
-            )}
-
+        <section 
+            className='md:w-[550px] w-[375px] bg-vs-bg' 
+            style={{ transition: 'opacity 500ms', opacity: opacity }}
+        >
             {children}
-        </>
-    )
+        </section>
+    );
 }
 
 export default Main;

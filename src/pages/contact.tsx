@@ -2,7 +2,7 @@ import Layout from '../components/layouts/article'
 import socials from '../lib/socials'
 import { Link } from 'react-router-dom'
 
-const Contact = () => {
+const Contact: React.FC = () => {
 
     return (
         <Layout title="Contact">

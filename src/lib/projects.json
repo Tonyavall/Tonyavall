@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Fitter",
+        "type": "Works",
+        "description": "A social media site to post your fits! Made with SSR, AWS, Graphql/MongoDB, and TypeScript.",
+        "narrative": "A social media site to post your fits! Made with SSR, AWS, Graphql/MongoDB, and TypeScript.",
+        "cover": "https://fitterapp.s3.us-west-1.amazonaws.com/fitter-logo.png",
+        "images": [],
+        "website": "https://fitterapp.vercel.app/",
+        "github": "https://github.com/Tonyavall/Fitterapp",
+        "stack": "NEXTJs, React, TypeScript, AWS S3, Apollo Client/Server, NoSQL/MongoDB/Mongoose, ChakraUI",
+        "platform": "Web",
+        "published": "2022",
+        "rank": 1
+    }
+]

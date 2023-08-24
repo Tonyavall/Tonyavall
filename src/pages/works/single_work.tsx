@@ -1,12 +1,13 @@
 import Layout from '../../components/layouts/article'
-import works from '../../lib/works.json';
+import projects from '../../lib/projects.json';
 import collaborations from '../../lib/collaborations.json';
 import { useParams, Link } from 'react-router-dom';
-// import Error from '../error'
+import smallProjects from '../../lib/small_projects.json'
 
-const SingleWork = () => {
+const SingleWork: React.FC = () => {
     const { work } = useParams()
-    const currentProject = works.concat(collaborations)
+    // @ts-ignore
+    const currentProject = projects.concat(collaborations).concat(smallProjects)
         .find(project => project.title === work)
 
     // if (!currentProject) return <Error/>
@@ -25,7 +26,7 @@ const SingleWork = () => {
             
             <div className="mb-20">
                 <div 
-                    style={{background: `url('${currentProject?.cover}')`, backgroundSize: 'cover', backgroundPosition: 'center'}}
+                    style={{background: `url('${currentProject?.cover}')`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}
                     className="h-72 rounded-xl mx-4 my-3">
                 </div>
                 <p className="mx-4 my-3">{currentProject?.narrative}</p>
